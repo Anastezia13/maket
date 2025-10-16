@@ -1,0 +1,66 @@
+/* 
+.класс
+# идентификатор 
+тег 
+:псевдокласс
+::псевдоэлемент
+*/
+
+@import url("/styles/components/button.css");
+
+/*  
+:root {
+  --container-width-kva: 0px;  ???????????????? 
+}
+*/
+
+.total-class {
+	/*    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-right: 10px;
+    box-sizing: border-box;*/
+	background-color: aquamarine;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.header__Layout {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+body {
+	margin: 0;
+	/*  position: relative;
+    height: 100vh;*/
+}
+
+.buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.logo {
+	width: 97;
+	height: 50;
+	top: 19;
+	left: 73;
+	border: 0.5;
+	/*    background-color: aqua;*/
+}
+
+/*
+.menu-items {
+	display: none;
+}
+
+.menu-toggle.active + .menu-items {
+	display: block;
+}
+*/
