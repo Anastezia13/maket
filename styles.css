@@ -3,16 +3,18 @@
 # идентификатор 
 тег 
 :псевдокласс
-::псевдоэлемент
+::псевдоэлемент (чекбоксы) 
 */
 
-@import url("/styles/components/button.css");
+@import url("/components/button.css");
 
-/*  
+@import url("/styles/header.css");
+@import url("/styles/text.css");
+
+/*
 :root {
-  --container-width-kva: 0px;  ????nbvc???????????? 
-}
-*/
+	---: 100% 100vh;  
+} */
 
 .total-class {
 	/*    display: flex;
@@ -20,23 +22,18 @@
     padding: 20px;
     margin-right: 10px;
     box-sizing: border-box;*/
-	background-color: aquamarine;
-}
-
-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 10px;
-}
-
-.header__Layout {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	background-color: rgb(67, 172, 165);
 }
 
 body {
-	margin: 0;
+	/*
+	font-family: var ();
+	*/
+	font-size: 20px;
+	font-weight: 500;
+	/*color: var();
+	
+	/*margin: 0;
 	/*  position: relative;
     height: 100vh;*/
 }
@@ -53,6 +50,12 @@ body {
 	left: 73;
 	border: 0.5;
 	/*    background-color: aqua;*/
+}
+
+.photo1 {
+	width: 320px;
+	height: 230px; 
+	top: 358px;
 }
 
 /*

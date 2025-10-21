@@ -14,6 +14,13 @@
 	margin-right: 10px;
 }
 
+.button__arrow {
+	display: flex;
+	border: none;
+	/*none убрать? */
+	background-color: transparent; 
+}
+
 /**/
 
 /**/
