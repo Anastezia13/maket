@@ -6,10 +6,11 @@
 ::псевдоэлемент (чекбоксы) 
 */
 
-@import url("/components/button.css");
+@import url("/styles/components/button.css");
 
 @import url("/styles/header.css");
 @import url("/styles/text.css");
+@import url("/styles/main.css");
 
 /*
 :root {
@@ -26,9 +27,8 @@
 }
 
 body {
-	/*
 	font-family: var ();
-	*/
+	
 	font-size: 20px;
 	font-weight: 500;
 	/*color: var();
