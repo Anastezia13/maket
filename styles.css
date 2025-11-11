@@ -7,15 +7,20 @@
 */
 
 @import url("/styles/components/button.css");
-
 @import url("/styles/header.css");
 @import url("/styles/text.css");
 @import url("/styles/main.css");
 
-/*
+
 :root {
+	--text-bold: "TTLakesBold";
+	--text-regular: "TTLakesRegular";
+	--text-medium: "TTLakesMedium";
+
+/*
 	---: 100% 100vh;  
-} */
+*/
+} 
 
 .total-class {
 	/*    display: flex;
@@ -38,6 +43,14 @@ body {
     height: 100vh;*/
 }
 
+/*
+main {
+	font-family: var(--text-bold);
+}
+*/
+
+
+  
 .buttons {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
