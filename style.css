@@ -7,7 +7,7 @@
 */
 
 @import url("/styles/components/button.css");
-@import url("/styles/components/text.css");
+@import url("/styles/components/fonts.css");
 @import url("/styles/header.css");
 @import url("/styles/main.css");
 
@@ -16,6 +16,8 @@
 	--text-bold: "TTLakesBold";
 	--text-regular: "TTLakesRegular";
 	--text-medium: "TTLakesMedium";
+	
+	--color-pink: #FF3E79;
 
 /*
 	---: 100% 100vh;  
@@ -43,11 +45,7 @@ body {
     height: 100vh;*/
 }
 
-/*
-main {
-	font-family: var(--text-bold);
-}
-*/
+
 
 
   

@@ -25,49 +25,7 @@
 
 
 
-/**/
-
-
-
-
-
-
-
-
-.title__line {
-	display: flex;
-	width: 5px;
-	height: 40px;
-	border-radius: 0 5px 5px 0;
-	background-color: aquamarine;
-}
-
-	/*
-.title__text {
-    font-family: var();
-    font-weight: bold;
-    font-size: 2.5rem;
-    margin-left: 0.8rem;
-    
-}
-
-	title__line - это через ::before
-
-
-.about__text > p {
-	
-}
-
-*/
-
-
-
-
-
-
-
-
-
+/**/ 
 
 
 

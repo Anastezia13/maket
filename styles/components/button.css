@@ -4,14 +4,18 @@
 	display: flex;
 	align-items: center;
 	border: none;
-	/*none убрать? */
-	background-color: transparent;
-	/*прозрачный*/
+	/*none убрать? */ 
+	background-color: var(--color-pink);
+	/* transparent прозрачный*/
 	padding: auto; /**/
 
 	width: 40px;
 	height: 40px;
 	margin-right: 10px;
+	margin-left: 10px; 
+
+	border-radius: 50%;
+	justify-content: center;
 }
 
 .button__arrow {
@@ -19,6 +23,9 @@
 	border: none;
 	/*none убрать? */
 	background-color: transparent; 
+	margin-bottom: 10px;
+	gap: 8px;
+	
 }
 
 /**/
@@ -35,5 +42,8 @@
     border-radius: 20px;
     
 }
+
+
+
 
 */
