@@ -31,20 +31,22 @@
 }
 
 
-/*
-main {
-	font-family: var(--text-bold);
-}
-*/
-
-
-/*
-
-
 
 
 .about__text > p {
-	
+	font-family: var(--text-regular);
 }
 
-*/
+
+
+
+.main-layout {
+	font-family: var();
+}
+
+
+/**/
+
+
+
+ 

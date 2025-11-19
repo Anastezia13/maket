@@ -1,132 +1,122 @@
 <!DOCTYPE html>
 
 <html lang="ru" class="total-class">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="style.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
 
-		<title>kva</title>
-		<!--иконка вкладки-->
-	</head>
+        <title>kva</title>
+        <!--иконка вкладки-->
+    </head>
 
-	<!---->
+    <!---->
 
-	<body>
-		
-		<header class="header">
-			<div class="header__Layout">
-				<!---->
-				<!--меню бурер сделать по другому ПЕРЕДЕЛАТЬ -->
-				<nav class="menu">
-					<button class="header__button">
-						<img
-							src="image/header/burger.svg"
-							alt="burger"
-						/>
-					</button>
-					<!--
-					<ul class="menu-items">
-						<li>главная</li>
-						<li>не главная</li>
-						<li>третья</li>
-					</ul>
-					-->
-				</nav>
+    <body>
+        <aside class="bok-menu">
+            <!--вынести на уровень с мейн-->
+            <div class="bok-menu-layout">
 
-				<!--логотип. обернуть ? <a> href="#" class="" </a>...-->
-				<div class="logo">
-					<img src="image/header/logo.svg" alt="logo CPS" />
-				</div>
-
-				<!--кнопки 1 и 2-->
-				<div class="buttons">
-					<button class="header__button">
-						<img
-							src="image/header/repair.svg"
-							alt="repair"
-						/>
-					</button>
-					<button class="header__button">
-						<img
-							src="image/header/checkstatus.svg"
-							alt="checkstatus"
-						/>
-					</button>
-				</div>
-			</div>
-		</header>
-
-		<main>
-			<div class="main-layout">
+                <nav class="menu-nav" aria-label="меню">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link"> Ремонт техники</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Услуги и сервисы</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Корпоративным клиентам</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Продавцам техники</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Партнерам</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Производителям</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Наши сервисные центры</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
 
 
 
-				<section class="about">
+            </div>
+        </aside>
 
-					<!---->
+        <header class="header">
+            <div class="header__Layout">
+                <!---->
+                <!--меню бурер полоски переделать-->
+                <nav class="menu">
+                    <button class="header__button">
+                        <img src="image/header/burger.svg" alt="burger" />
+                    </button>
+                </nav>
 
-					<div class="about__title">
-						
-						<h1 class="title__text">Услуги и сервисы</h1>
+                <!--логотип. обернуть ? <a> href="#" class="" </a>...-->
+                <div class="logo">
+                    <img src="image/header/logo.svg" alt="logo CPS" />
+                </div>
 
-					</div>
+                <!--кнопки 1 и 2-->
+                <div class="buttons">
+                    <button class="header__button">
+                        <img src="image/header/repair.svg" alt="repair" />
+                    </button>
+                    <button class="header__button">
+                        <img src="image/header/checkstatus.svg" alt="checkstatus" />
+                    </button>
+                </div>
+            </div>
+        </header>
 
-					<!---->
+        <main>
+            <div class="main-layout">
+                <section class="about">
+                    <!---->
 
+                    <div class="about__title">
+                        <h1 class="title__text">Услуги и сервисы</h1>
+                    </div>
 
+                    <!---->
 
- 
-					<div class="about__list">
+                    <div class="about__list"></div>
 
-					</div>
+                    <!---->
 
+                    <div class="container">
+                        <article class="about__text">
+                            <p>
+                                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы
+                                можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                            </p>
+                            <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
 
+                            <button class="button__arrow">
+                                <img src="image/about/arrow.svg" alt="repair" />
+                                Читать далее
+                            </button>
 
+                            <img class="photo1" src="/image/about/photo1.png" />
+                        </article>
+                    </div>
 
+                    <!---->
+                </section>
 
+                <!---->
+            </div>
+        </main>
 
-					<!---->
-					
-					<div class="container">
-						
-						<article class="about__text">
-							<p>
-								Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
-								Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-							</p>
-							<p>
-								Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
-							</p>
-
-							<button class="button__arrow">
-								<img
-								src="image/arrow.svg"
-								alt="repair"
-								/>
-							 Читать далее
-							</button>
-
-							<img class="photo1" src="/image/photo1.png">
-
-						</article>
-
-						
-						
-
-					</div>
-
-					<!---->
-
-				</section>
-
-
-
-				<!---->
-				
-			</div>
-		</main>
-
-		<footer></footer>
-	</body>
+        <footer></footer>
+    </body>
 </html>

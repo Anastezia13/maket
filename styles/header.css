@@ -9,7 +9,57 @@ header {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+ 
 
+
+
+
+/* боковое меню */
+
+.bok-menu {
+	
+	float: left;
+	
+
+	display: flex;
+	width: 320px;
+	min-height: 100vh;
+	border-right: 5px solid #e665eb; 
+}
+
+.menu-nav {
+	padding: 20px;
+
+
+}
+
+.menu-list {
+	font-family: var(--text-regular);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+.menu-item {
+	margin-bottom: 10px;
+
+}
+
+.menu-link {
+	text-decoration: none;
+	color: #000;
+	transition: background-color 0.3 ease;
+}
+
+
+.menu-link:hover {
+	background-color: aqua;
+	
+}
+
+
+ 
 
 
 /* спрятанный из бургера + кнопка ?
