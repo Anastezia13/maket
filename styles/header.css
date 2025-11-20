@@ -1,65 +1,93 @@
 header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .header__Layout {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
  
-
-
-
 
 /* боковое меню */
 
 .bok-menu {
-	
-	float: left;
-	
+	/*position: fixed;
+	z-index: 1000;*/
 
-	display: flex;
-	width: 320px;
-	min-height: 100vh;
-	border-right: 5px solid #e665eb; 
+    box-shadow: 5px 0 20px -5px rgba(0,0,0,0.3);
+
+	margin-right: 20px;
+
+    float: left;
+
+    display: flex;
+    width: 320px;
+    min-height: 100vh;
+
+    border-right: 1px solid #cac8ca;
+	
+	background-color: var();
+}
+
+.bok-menu-layout {
+	height: 100vh;
+	padding: 20px 0;
+	overflow-y: auto;
 }
 
 .menu-nav {
-	padding: 20px;
-
-
+    padding: 5px;
 }
 
 .menu-list {
-	font-family: var(--text-regular);
-	list-style: none;
-	margin: 0;
-	padding: 0;
-
+    font-family: var(--text-regular);
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .menu-item {
-	margin-bottom: 10px;
-
+    margin-bottom: 10px;
 }
 
 .menu-link {
-	text-decoration: none;
-	color: #000;
-	transition: background-color 0.3 ease;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+
+	width: 320px; 
+	height: 24px;
+
+	font-size: 16px;
+
+	position: relative;
+	padding: 10px;
+
 }
 
-
-.menu-link:hover {
-	background-color: aqua;
+.menu-link:hover::before {
+	content: "";
+	position: absolute;
+	left: 0;
 	
+	top: 50%;
+	transform: translateY(-50%);
+		
+	display: flex;
+	width: 5px;
+	height: 40px;
+	border-radius: 0 5px 5px 0;
+	background-color: aquamarine;
 }
 
 
- 
+
+
+
+
 
 
 /* спрятанный из бургера + кнопка ?
