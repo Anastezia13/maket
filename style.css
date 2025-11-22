@@ -18,19 +18,32 @@
 	--text-medium: "TTLakesMedium";
 	
 	--color-pink: #FF3E79;
+	--color-white: #FFFFFF;
+	--color-gray: #7E7E82;
 
 /*
 	---: 100% 100vh;  
 */
 } 
 
+/*
+button:active, a:active,  {
+	background-color: var(--color-pink);
+	transform: translateY(1px);
+}
+	*/
+
+
 .total-class {
-	/*    display: flex;
-    justify-content: space-between;
+	display: flex;
+	/*    
+	justify-content: space-between;
     padding: 20px;
     margin-right: 10px;
     box-sizing: border-box;*/
-	background-color: rgba(244, 252, 252, 1);
+
+	background-color: #FFFFFF;
+	
 }
 
 body {

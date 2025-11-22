@@ -3,6 +3,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+
+	background-color: #FFFFFF;
 }
 
 .header__Layout {
@@ -10,6 +12,13 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
  
+
+.logo {
+	margin-right: 70px;
+	margin-left: 10px;
+}
+
+
 
 /* боковое меню */
 
@@ -32,7 +41,7 @@ header {
 	background-color: var();
 }
 
-.bok-menu-layout {
+.bok-menu-layout { 
 	height: 100vh;
 	padding: 20px 0;
 	overflow-y: auto;
@@ -45,7 +54,7 @@ header {
 .menu-list {
     font-family: var(--text-regular);
     list-style: none;
-    margin: 0;
+    margin: 10px;
     padding: 0;
 }
 
@@ -68,10 +77,17 @@ header {
 
 }
 
+.menu-link:hover {
+
+	color: var(--color-gray);
+}
+
+
 .menu-link:hover::before {
 	content: "";
 	position: absolute;
 	left: 0;
+
 	
 	top: 50%;
 	transform: translateY(-50%);
@@ -90,7 +106,35 @@ header {
 
 
 
-/* спрятанный из бургера + кнопка ?
-
-	меню сбоку + спрятать
+/* 
+	меню сбоку спрятать + кнопка 
+ 
 */
+
+.mail {
+	font-family: var(--text-regular);
+	margin-left: 10px;
+	margin-top: 10px;
+
+	text-decoration: none;
+    color: #000;
+
+}
+
+.tel {
+	font-family: var(--text-bold);
+	font-size: 24px;
+
+	margin-left: 10px;
+	margin-top: 10px;
+
+
+	text-decoration: none;
+    color: #000;
+}
+
+.contacts {
+	position: sticky;
+	bottom: 0; 
+	margin-top: auto;
+}

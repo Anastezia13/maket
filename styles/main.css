@@ -41,7 +41,8 @@
 
 
 .main-layout {
-	font-family: var(); 
+	display: flex;  
+	background-color: #F8F8F8;
 }
 
 

@@ -28,6 +28,26 @@
 	font-family: var(--text-regular);
 }
 
+
+.lang-btn {
+	display: flex;
+	align-items: center;
+	border: none;
+
+	width: 25px;
+	height: 24PX;
+	font-family: var(--text-regular);
+
+	background-color: var(--color-white);
+	margin-left: 5px;
+
+}
+
+.lang-btn:hover {
+	color: var(--color-gray);
+}
+
+
 /**/
 
 /**/
