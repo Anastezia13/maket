@@ -5,6 +5,8 @@ header {
     padding: 10px;
 
 	background-color: #FFFFFF;
+	height: 88px;
+/*	width: 100vh;*/
 }
 
 .header__Layout {

@@ -19,12 +19,22 @@
 	
 	--color-pink: #FF3E79;
 	--color-white: #FFFFFF;
+	--color-whitegray: #F8F8F8;
 	--color-gray: #7E7E82;
 
 /*
 	---: 100% 100vh;  
 */
 } 
+
+
+
+
+
+
+
+
+
 
 /*
 button:active, a:active,  {
@@ -34,15 +44,16 @@ button:active, a:active,  {
 	*/
 
 
-.total-class {
-	display: flex;
+.total-class { 
+	flex-direction: column;
+	background-color: var(--color-white);
 	/*    
 	justify-content: space-between;
     padding: 20px;
     margin-right: 10px;
     box-sizing: border-box;*/
+	
 
-	background-color: #FFFFFF;
 	
 }
 

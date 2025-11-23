@@ -66,19 +66,23 @@
 /**/
 
 /**/
+ 
+ 
+.about__list__btn {
+	border: none;
+	width: 233px;
+	height: 40px;
+	background-color: transparent;
+	font-family: var(--text-regular);
+	font-size: 16px;
 
-/*
+	border-radius: 6px;
 
-.menu-kva {
-    width: 40px;
-    height: 40px;
-    top: 24px;
-    left: 16px;
-    border-radius: 20px;
-    
+
+}  
+
+
+
+.about__list__btn:hover {
+	border: 2px solid #B8FFEC;
 }
-
-
-
-
-*/
