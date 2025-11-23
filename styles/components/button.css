@@ -20,6 +20,7 @@
 
 .header__button:hover {
 	transform: scale(1.15);
+	transition: all 0.3s ease;
 }
 
 .button__arrow {
