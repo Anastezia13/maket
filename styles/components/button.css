@@ -16,12 +16,23 @@
 
 	border-radius: 50%;
 	justify-content: center;
+
+	transition: all 0.3s ease;
+
 }
 
 .header__button:hover {
 	transform: scale(1.15);
 	transition: all 0.3s ease;
+	
 }
+
+.header__button:active {
+	filter: hue-rotate(-15deg);
+	transform: scale(1.2) rotate(9deg); 
+}
+
+
 
 .button__arrow {
 	display: flex;
@@ -35,8 +46,7 @@
 
 
 .lang-btn {
-	display: flex;
-	align-items: center;
+	display: flex; 
 	border: none;
 
 	width: 25px;
