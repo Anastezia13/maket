@@ -74,11 +74,9 @@
 	height: 40px;
 	background-color: transparent;
 	font-family: var(--text-regular);
-	font-size: 16px;
-
+	font-size: 16px; 
 	border-radius: 6px;
-
-
+	white-space: nowrap;
 }  
 
 
