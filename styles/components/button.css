@@ -18,6 +18,10 @@
 	justify-content: center;
 }
 
+.header__button:hover {
+	transform: scale(1.15);
+}
+
 .button__arrow {
 	display: flex;
 	border: none;

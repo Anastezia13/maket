@@ -49,6 +49,7 @@ header {
 
 .menu-nav {
     padding: 5px;
+	min-height: 0;
 }
 
 .menu-list {
@@ -79,7 +80,8 @@ header {
 
 .menu-link:hover {
 
-	color: var(--color-gray);
+	color: var(--color-gray); 
+/*	transform: translateX(10px);*/
 }
 
 
@@ -133,8 +135,7 @@ header {
     color: #000;
 }
 
-.contacts {
-	position: sticky;
+.contacts { 
 	bottom: 0; 
 	margin-top: auto;
 }
