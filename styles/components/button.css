@@ -1,6 +1,6 @@
 /**/
 
-.header__button {
+.red-btn {
 	display: flex;
 	align-items: center;
 	border: none;
@@ -21,13 +21,13 @@
 
 }
 
-.header__button:hover {
+.red-btn:hover {
 	transform: scale(1.15);
 	transition: all 0.3s ease;
 	
 }
 
-.header__button:active {
+.red-btn:active {
 	filter: hue-rotate(-15deg);
 	transform: scale(1.2) rotate(9deg); 
 }
@@ -84,3 +84,85 @@
 .about__list__btn:hover {
 	border: 2px solid #B8FFEC;
 }
+
+
+
+.btn-exit {
+	background-image: url(/image/header/menu-burger/exit.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
+
+
+.btn-poisk {
+	background-image: url(/image/header/menu-burger/lupa.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.btn-call {
+	background-image: url(/image/header/menu-burger/call.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
+
+.btn-chat {
+	background-image: url(/image/header/menu-burger/chat.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.btn-people {
+	background-image: url(/image/header/menu-burger/people.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.btn-burger {
+	background-image: url(/image/header/burger.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
+.btn-repair {
+	background-image: url(/image/header/repair.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
+
+.btn-check {
+	background-image: url(/image/header/checkstatus.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
