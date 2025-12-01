@@ -24,7 +24,7 @@ header {
 
 /* боковое меню */
 
-.bok-menu {
+.side-menu {
 	/*position: fixed;
 	z-index: 1000;*/
 
@@ -43,7 +43,7 @@ header {
 	background-color: var();
 }
 
-.bok-menu-layout { 
+.side-menu-layout { 
 	height: 100vh;
 	padding: 20px 0;
 	overflow-y: auto;
