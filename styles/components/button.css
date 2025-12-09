@@ -1,6 +1,6 @@
 .buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+/*    grid-template-columns: 1fr 1fr 1fr 1fr;*/
 }
 
 button {
@@ -63,8 +63,7 @@ a {
 
 /**/
 
-.lang-btn {
-    display: flex;
+.lang-btn { 
     border: none;
 
     width: 25px;
