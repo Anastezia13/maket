@@ -7,62 +7,69 @@
         <link rel="stylesheet" href="style.css" />
 
         <title>kva</title>
-        <!--иконка вкладки-->
+        <!--иконка вкладки <link rel="icon" type=""> -->
     </head>
 
-    <!---->
+    <!--
+    комент для ментора
+
+    sidebar__container  без этого див все сьезжает
+
+    стили дробить больше не буду, но эти можно пока так оставлю, мне так удобнее, потом поменяю так как нужно будет 
+    
+    разные отступы убрала на горяч клавишу, я их для наглядности себе делала
+
+    -->
 
     <body class="body">
+        <!--боковое меню-->
         <aside class="sidebar">
-            <!--боковое меню-->
             <div class="sidebar__container">
+                <!-- без этого див все сьезжает-->
+
                 <header class="header__Layout">
-                    <button class="red-btn btn-exit"></button>
+                    <button class="btn__red btn-exit"></button>
 
-                    <a href="#" class="logo">
-                        <img src="image/header/logo.svg" alt="logo CPS" />
-                    </a>
+                    <a href="#" class="logo"> <img src="image/header/logo.svg" alt="logo CPS" /> </a>
 
-                    <button class="red-btn btn-poisk"></button>
+                    <button class="btn__red btn-poisk"></button>
                 </header>
 
-                <nav class="menu-nav" aria-label="меню">
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <a href="#" class="menu-link"> Ремонт техники</a>
+                <nav class="sidebar__nav" aria-label="меню">
+                    <ul class="sidebar__list">
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link"> Ремонт техники</a>
                         </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Услуги и сервисы</a>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">Услуги и сервисы</a>
                         </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Корпоративным клиентам</a>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">Корпоративным клиентам</a>
                         </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Продавцам техники</a>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">Продавцам техники</a>
                         </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Партнерам</a>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">Партнерам</a>
                         </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Производителям</a>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">Производителям</a>
                         </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Наши сервисные центры</a>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">Наши сервисные центры</a>
                         </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Контакты</a>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
 
-                <footer class="footer__sidebar">
-                    <div class="buttons">
-                        <button class="red-btn btn-call"></button>
-
-                        <button class="red-btn btn-chat"></button>
-
-                        <button class="red-btn btn-people"></button>
-                    </div>
+                <footer class="sidebar__footer">
+                    <ul class="buttons">
+                        <li><button class="btn__red btn-call"></button></li>
+                        <li><button class="btn__red btn-chat"></button></li>
+                        <li><button class="btn__red btn-people"></button></li>
+                    </ul>
 
                     <address class="contacts">
                         <a class="mail" href="mailto:mail@cps.com">mail@cps.com</a>
@@ -70,82 +77,13 @@
                         <a href="tel:88008908900" class="tel">8 800 890 8900</a>
                     </address>
 
-                    <div class="buttons">
-                        <button class="lang-btn">RU</button>
-                        <button class="lang-btn">EN</button>
-                        <button class="lang-btn">CH</button>
-                    </div>
-                    
+                    <ul class="buttons">
+                        <li><button class="btn__lang">RU</button></li>
+                        <li><button class="btn__lang">EN</button></li>
+                        <li><button class="btn__lang">CH</button></li>
+                    </ul>
                 </footer>
             </div>
         </aside>
-
-        <header class="header">
-            <div class="header__Layout">
-                <!---->
-                <!--меню бурер полоски переделать-->
-                <nav class="menu">
-                    <button class="red-btn btn-burger"></button>
-                </nav>
-
-                <a href="#" class="logo">
-                    <img src="image/header/logo.svg" alt="logo CPS" />
-                </a>
-
-                <!--кнопки-->
-                <div class="buttons">
-                    <button class="red-btn btn-repair"></button>
-                    <button class="red-btn btn-check"></button>
-                </div>
-            </div>
-        </header>
-
-        <main>
-            <div class="main-layout">
-                <section class="about">
-                    <!---->
-
-                    <div class="about__title">
-                        <h1 class="title__text">Услуги и сервисы</h1>
-                    </div>
-
-                    <!---->
-
-                    <div class="about__list">
-                        <button class="about__list__btn">Ремонтируемые бренды</button>
-                        <button class="about__list__btn">Дополнительные услуги</button>
-                        <button class="about__list__btn">Цены на услуги</button>
-                        <button class="about__list__btn">Адреса сервисных центров</button>
-                        <button class="about__list__btn">Специальные цены</button>
-                        <button class="about__list__btn">Отзывы</button>
-                    </div>
-
-                    <!---->
-
-                    <div class="container">
-                        <article class="about__text">
-                            <p>
-                                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы
-                                можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                            </p>
-                            <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
-
-                            <button class="button__arrow">
-                                <img src="image/about/arrow.svg" alt="repair" />
-                                Читать далее
-                            </button>
-
-                            <img class="photo1" src="/image/about/photo1.png" />
-                        </article>
-                    </div>
-
-                    <!---->
-                </section>
-
-                <!---->
-            </div>
-        </main>
-
-        <footer></footer>
     </body>
 </html>

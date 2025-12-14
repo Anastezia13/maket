@@ -4,111 +4,88 @@ header {
     justify-content: space-between;
     padding: 10px;
 
-	background-color: #FFFFFF;
-	height: 88px;
-/*	width: 100vh;*/
+    background-color: #ffffff;
+    height: 88px;
+    /*	width: 100vh;*/
 }
 
 .header__Layout {
     display: flex;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
- 
 
 .logo {
-	margin-right: 70px;
-	margin-left: 10px;
+    margin-right: 70px;
+    margin-left: 10px;
 }
-
-
 
 /* боковое меню */
 
 .sidebar {
-	/*position: fixed;
-	z-index: 1000;*/
-
-    box-shadow: 5px 0 20px -5px rgba(0,0,0,0.3);
-
-	margin-right: 20px;
-
+    box-shadow: 5px 0 20px -5px rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
     float: left;
-
     display: flex;
     width: 320px;
     min-height: 100vh;
-
     border-right: 1px solid #cac8ca;
-	
-	background-color: var();
 }
 
-.sidebar-layout { 
-	height: 100vh;
-	padding: 20px 0;
-	overflow-y: auto;
+.sidebar-layout {
+    height: 100vh;
+    padding: 20px 0;
+    overflow-y: auto;
 }
 
-.menu-nav {
+.sidebar__nav {
     padding: 5px;
-	min-height: 0;
+    min-height: 0;
 }
 
-.menu-list {
+.sidebar__list {
     font-family: var(--text-regular);
     list-style: none;
     margin: 10px;
     padding: 0;
 }
 
-.menu-item {
+.sidebar__item {
     margin-bottom: 10px;
 }
 
-.menu-link {
+.sidebar__link {
     text-decoration: none;
     color: #000;
     transition: all 0.3s ease;
 
-	width: 320px; 
-	height: 24px;
+    width: 320px;
+    height: 24px;
 
-	font-size: 16px;
+    font-size: 16px;
 
-	position: relative;
-	padding: 10px;
-
+    position: relative;
+    padding: 10px;
 }
 
-.menu-link:hover {
-
-	color: var(--color-gray); 
-/*	transform: translateX(10px);*/
+.sidebar__link:hover {
+    color: var(--color-gray);
+    /*	transform: translateX(10px);*/
 }
 
+.sidebar__link:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
 
-.menu-link:hover::before {
-	content: "";
-	position: absolute;
-	left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 
-	
-	top: 50%;
-	transform: translateY(-50%);
-		
-	display: flex;
-	width: 5px;
-	height: 40px;
-	border-radius: 0 5px 5px 0;
-	background-color: aquamarine;
+    display: flex;
+    width: 5px;
+    height: 40px;
+    border-radius: 0 5px 5px 0;
+    background-color: aquamarine;
 }
-
-
-
-
-
-
-
 
 /* 
 	меню сбоку спрятать + кнопка 
@@ -116,28 +93,26 @@ header {
 */
 
 .mail {
-	font-family: var(--text-regular);
-	margin-left: 10px;
-	margin-top: 10px;
+    font-family: var(--text-regular);
+    margin-left: 10px;
+    margin-top: 10px;
 
-	text-decoration: none;
+    text-decoration: none;
     color: #000;
-
 }
 
 .tel {
-	font-family: var(--text-bold);
-	font-size: 24px;
+    font-family: var(--text-bold);
+    font-size: 24px;
 
-	margin-left: 10px;
-	margin-top: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
 
-
-	text-decoration: none;
+    text-decoration: none;
     color: #000;
 }
 
-.contacts { 
-	display: flex;
-	flex-direction: column;
+.contacts {
+    display: flex;
+    flex-direction: column;
 }

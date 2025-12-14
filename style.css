@@ -12,72 +12,60 @@
 @import url("/styles/main.css");
 @import url("/styles/footer.css");
 
-
 :root {
-	--text-bold: "TTLakesBold";
-	--text-regular: "TTLakesRegular";
-	--text-medium: "TTLakesMedium";
-	
-	--color-pink: #FF3E79;
-	--color-white: #FFFFFF;
-	--color-whitegray: #F8F8F8;
-	--color-gray: #7E7E82;
+    --text-bold: "TTLakesBold";
+    --text-regular: "TTLakesRegular";
+    --text-medium: "TTLakesMedium";
 
-/*
+    --color-pink: #ff3e79;
+    --color-white: #ffffff;
+    --color-whitegray: #f8f8f8;
+    --color-gray: #7e7e82;
+
+    /*
 	---: 100% 100vh;  
 */
-} 
-
-
+}
 
 /**/
 
-
-
- 
- 
- 
-.body { 
-	flex-direction: column;
-	background-color: var(--color-white);
-	/*    
+.body {
+    flex-direction: column;
+    background-color: var(--color-white);
+    /*    
 	justify-content: space-between;
     padding: 20px;
     margin-right: 10px;
     box-sizing: border-box;*/
-	
-
-	
 }
 
 body {
-	font-family: var ();
-	
-	font-size: 20px;
-	font-weight: 500;
-	/*color: var();
+    font-family: var ();
+
+    font-size: 20px;
+    font-weight: 500;
+    /*color: var();
 	
 	/*margin: 0;
 	/*  position: relative;
     height: 100vh;*/
+
+    width: 100vh;
 }
 
-
-
- 
 .logo {
-	width: 97;
-	height: 50;
-	top: 19;
-	left: 73;
-	border: 0.5;
-	/*    background-color: aqua;*/
+    width: 97;
+    height: 50;
+    top: 19;
+    left: 73;
+    border: 0.5;
+    /*    background-color: aqua;*/
 }
 
 .photo1 {
-	width: 320px;
-	height: 230px; 
-	top: 358px;
+    width: 320px;
+    height: 230px;
+    top: 358px;
 }
 
 /*
