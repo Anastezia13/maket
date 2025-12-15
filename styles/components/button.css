@@ -103,37 +103,43 @@ button:active, a:active,  {
 
 /*иконки*/
 
+/* перемещены в style.css */ 
+
+/*
+
 .btn-exit {
-    background-image: url(../../image/header/menu-burger/exit.svg);
+    background-image: url(/image/header/menu-burger/exit.svg);
 }
 
 .btn-poisk {
-    background-image: url(../../image/header/menu-burger/lupa.svg);
+    background-image: url(/image/header/menu-burger/lupa.svg);
 }
 
 .btn-call {
-    background-image: url(../../image/header/menu-burger/call.svg);
+    background-image: url(/image/header/menu-burger/call.svg);
 }
 
 .btn-chat {
-    background-image: url(../../image/header/menu-burger/chat.svg);
+    background-image: url(/image/header/menu-burger/chat.svg);
 }
 
 .btn-people {
-    background-image: url(../../image/header/menu-burger/people.svg);
+    background-image: url(/image/header/menu-burger/people.svg);
 }
 
 .btn-burger {
-    background-image: url(../../image/header/burger.svg);
+    background-image: url(/image/header/burger.svg);
 }
 
 .btn-repair {
-    background-image: url(../../image/header/repair.svg);
+    background-image: url(/image/header/repair.svg);
 }
 
 .btn-check {
-    background-image: url(../../image/header/checkstatus.svg);
+    background-image: url(/image/header/checkstatus.svg);
 }
+
+*/ 
 
 /**/
  

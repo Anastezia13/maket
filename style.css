@@ -12,6 +12,69 @@
 @import url("/styles/main.css");
 @import url("/styles/footer.css");
 
+/*шрифты*/
+
+@font-face {
+    font-family: "TTLakesBold";
+    src: url("/fonts/TTLakes/TTLakes-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TTLakesRegular";
+    src: url("/fonts/TTLakes/TTLakes-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TTLakesMedium";
+    src: url("/fonts/TTLakes/TTLakes-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*свг кнопок*/
+
+
+.btn-exit {
+    background-image: url(/image/header/menu-burger/exit.svg);
+}
+
+.btn-poisk {
+    background-image: url(/image/header/menu-burger/lupa.svg);
+}
+
+.btn-call {
+    background-image: url(/image/header/menu-burger/call.svg);
+}
+
+.btn-chat {
+    background-image: url(/image/header/menu-burger/chat.svg);
+}
+
+.btn-people {
+    background-image: url(/image/header/menu-burger/people.svg);
+}
+
+.btn-burger {
+    background-image: url(/image/header/burger.svg);
+}
+
+.btn-repair {
+    background-image: url(/image/header/repair.svg);
+}
+
+.btn-check {
+    background-image: url(/image/header/checkstatus.svg);
+}
+
+
+
+
+/**/
+
 :root {
     --text-bold: "TTLakesBold";
     --text-regular: "TTLakesRegular";
