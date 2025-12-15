@@ -6,6 +6,14 @@ a {
     cursor: pointer;
 }
 
+
+/*
+button:active, a:active,  {
+	background-color: var(--color-pink);
+	transform: translateY(1px);
+}
+	*/
+
 .buttons {
     display: flex;
     /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
@@ -21,8 +29,7 @@ a {
     border: none;
     /*none заменить? */
     background-color: var(--color-pink);
-    /* transparent прозрачный*/
-    padding: auto; /**/
+    padding: auto;
 
     width: 40px;
     height: 40px;
@@ -129,10 +136,4 @@ a {
 }
 
 /**/
-
-/*
-button:active, a:active,  {
-	background-color: var(--color-pink);
-	transform: translateY(1px);
-}
-	*/
+ 
