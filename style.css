@@ -7,7 +7,7 @@
 */
 
 @import url("styles/components/button.css");
-@import url("styles/components/fonts.css");
+/* @import url("styles/components/fonts.css"); */
 @import url("styles/header.css");
 @import url("styles/main.css");
 @import url("styles/footer.css");
@@ -16,21 +16,22 @@
 
 @font-face {
     font-family: "TTLakesBold";
-    src: url("../../fonts/TTLakes/TTLakes-Bold.woff") format("woff");
+    src: url("./fonts/TTLakes/TTLakes-Bold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "TTLakesRegular";
-    src: url("../../fonts/TTLakes/TTLakes-Regular.woff") format("woff");
+    src: url("./fonts/TTLakes/TTLakes-Regular.woff") format("woff");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "TTLakesMedium";
-    src: url("../../fonts/TTLakes/TTLakes-Medium.woff") format("woff");
+    src: url("./fonts/TTLakes/TTLakes-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
 }
