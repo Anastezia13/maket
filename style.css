@@ -67,7 +67,7 @@
 
 .btn-check {
     background-image: url(../../image/header/checkstatus.svg);
-} 
+}
 
 /**/
 
@@ -80,10 +80,6 @@
     --color-white: #ffffff;
     --color-whitegray: #f8f8f8;
     --color-gray: #7e7e82;
-
-    /*
-	---: 100% 100vh;  
-*/
 }
 
 /**/
@@ -91,24 +87,11 @@
 .body {
     flex-direction: column;
     background-color: var(--color-white);
-    /*    
-	justify-content: space-between;
-    padding: 20px;
-    margin-right: 10px;
-    box-sizing: border-box;*/
 }
 
 body {
-    font-family: var ();
-
     font-size: 20px;
     font-weight: 500;
-    /*color: var();
-	
-	/*margin: 0;
-	/*  position: relative;
-    height: 100vh;*/
-
     width: 100vh;
 }
 
@@ -118,7 +101,6 @@ body {
     top: 19;
     left: 73;
     border: 0.5;
-    /*    background-color: aqua;*/
 }
 
 .photo1 {
@@ -126,13 +108,3 @@ body {
     height: 230px;
     top: 358px;
 }
-
-/*
-.menu-items {
-	display: none;
-}
-
-.menu-toggle.active + .menu-items {
-	display: block;
-}
-*/

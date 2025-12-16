@@ -3,10 +3,9 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-
     background-color: #ffffff;
     height: 88px;
-    /*	width: 100vh;*/
+    /* width: 100vh;*/
 }
 
 .header__Layout {
@@ -76,10 +75,8 @@ header {
     content: "";
     position: absolute;
     left: 0;
-
     top: 50%;
     transform: translateY(-50%);
-
     display: flex;
     width: 5px;
     height: 40px;
@@ -87,16 +84,10 @@ header {
     background-color: aquamarine;
 }
 
-/* 
-	меню сбоку спрятать + кнопка 
- 
-*/
-
 .mail {
     font-family: var(--text-regular);
     margin-left: 10px;
     margin-top: 10px;
-
     text-decoration: none;
     color: #000;
 }
@@ -104,10 +95,8 @@ header {
 .tel {
     font-family: var(--text-bold);
     font-size: 24px;
-
     margin-left: 10px;
     margin-top: 10px;
-
     text-decoration: none;
     color: #000;
 }

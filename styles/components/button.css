@@ -1,21 +1,15 @@
-button {
-    cursor: pointer;
-}
-
+button,
 a {
     cursor: pointer;
 }
 
-/*
-button:active, a:active,  {
+/* button:active, a:active,  {
 	background-color: var(--color-pink);
 	transform: translateY(1px);
-}
-	*/
+} */
 
 .buttons {
     display: flex;
-    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
 }
 
 .buttons > li {
@@ -25,8 +19,7 @@ button:active, a:active,  {
 .btn__red {
     display: flex;
     align-items: center;
-    border: none;
-    /*none заменить? */
+    border: none; /* none заменить? (видео)*/
     background-color: var(--color-pink);
     padding: auto;
 
@@ -59,7 +52,6 @@ button:active, a:active,  {
 .button__arrow {
     display: flex;
     border: none;
-    /*none убрать? */
     background-color: transparent;
     margin-bottom: 10px;
     gap: 8px;
@@ -70,11 +62,9 @@ button:active, a:active,  {
 
 .btn__lang {
     border: none;
-
     width: 25px;
     height: 24px;
     font-family: var(--text-regular);
-
     background-color: var(--color-white);
     margin-left: 5px;
 }
@@ -139,5 +129,3 @@ button:active, a:active,  {
 }
 
 */
-
-/**/
