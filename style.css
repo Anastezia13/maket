@@ -5,9 +5,11 @@
 :псевдокласс
 ::псевдоэлемент (чекбоксы) 
 @import url("styles/button.css");
+* {}
 
-для поиска: шрифты футер иконки кнопки мейн хедер
-боковое меню
+для поиска: шрифты фото иконки кнопки  бренды       
+боковое меню          
+футер мейн хедер 
 */
 
 :root {
@@ -21,18 +23,264 @@
     --color-gray: #7e7e82;
 }
 
-/**/
-
-.body {
-    flex-direction: column;
-    background-color: var(--color-white);
-}
-
 body {
+    display: flex;
+    width: 100vh;
+    background-color: var(--color-white);
+    font-family: var(--text-regular);
     font-size: 20px;
     font-weight: 500;
+}
+
+li {
+    list-style: none;
+}
+
+/*хедер*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff;
+    height: 88px;
+    /* width: 100vh;*/
+}
+
+/*мейн*/
+
+main {
     width: 100vh;
 }
+
+.title__text {
+    font-family: var(--text-bold);
+    position: relative;
+    padding-left: 20px;
+}
+
+.title__text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 5px;
+    height: 40px;
+    border-radius: 0 5px 5px 0;
+    background-color: aquamarine;
+}
+
+.about__text > p {
+    font-family: var(--text-regular);
+}
+
+/**/
+
+.about__list {
+    display: flex;
+    gap: 5px;
+}
+
+.about__list__btn {
+    border: 2px solid transparent;
+    width: 1fr;
+    height: 40px;
+    background-color: transparent;
+    font-family: var(--text-regular);
+    font-size: 16px;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.about__list__btn:hover {
+    border: 2px solid #b8ffec;
+}
+
+
+/*бренды*/
+
+.brand {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+.brand__item {
+    width: 240px;
+    height: 72px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid var(--color-gray);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand__btn {   
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--color-pink);
+    border-radius: 50px;
+    background-color: transparent;
+    background-image: url(/image/brand.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.brand__item > img {
+    width: 108px;
+    height: 32px;
+    object-fit: contain;
+}
+
+/**/
+
+/*футер*/
+
+/*кнопки*/
+
+button,
+a {
+    cursor: pointer;
+}
+
+/* button:active, a:active,  {
+	background-color: var(--color-pink);
+	transform: translateY(1px);
+} */
+
+.buttons {
+    display: flex;
+}
+
+.btn__red {
+    display: flex;
+    align-items: center;
+    border: none; /* none заменить? (видео)*/
+    background-color: var(--color-pink);
+    padding: auto;
+
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    border-radius: 50%;
+    justify-content: center;
+
+    transition: all 0.3s ease;
+
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn__red:hover {
+    transform: scale(1.15);
+    transition: all 0.3s ease;
+}
+
+.btn__red:active {
+    filter: hue-rotate(-15deg);
+    transform: scale(1.2) rotate(9deg);
+}
+
+/**/
+
+.button__arrow {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 10px;
+    gap: 8px;
+    font-family: var(--text-regular);
+}
+
+/**/
+
+.btn__lang {
+    border: none;
+    width: 25px;
+    height: 24px;
+    font-family: var(--text-regular);
+    background-color: var(--color-white);
+    margin-left: 5px;
+}
+
+.btn__lang:hover {
+    color: var(--color-gray);
+}
+
+/*иконки*/
+
+.btn-exit {
+    background-image: url(/image/exit.svg);
+}
+
+.btn-poisk {
+    background-image: url(/image/lupa.svg);
+}
+
+.btn-call {
+    background-image: url(/image/call.svg);
+}
+
+.btn-chat {
+    background-image: url(/image/chat.svg);
+}
+
+.btn-people {
+    background-image: url(/image/people.svg);
+}
+
+.btn-burger {
+    background-image: url(/image/burger.svg);
+}
+
+.btn-repair {
+    background-image: url(/image/repair.svg);
+}
+
+.btn-check {
+    background-image: url(/image/checkstatus.svg);
+}
+
+/*шрифты*/
+
+@font-face {
+    font-family: "TTLakesBold";
+    src: url("../../fonts/TTLakes-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TTLakesRegular";
+    src: url("../../fonts/TTLakes-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TTLakesMedium";
+    src: url("../../fonts/TTLakes-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*фото*/
 
 .logo {
     margin-right: 70px;
@@ -50,34 +298,15 @@ body {
     top: 358px;
 }
 
-/*хедер*/
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #ffffff;
-    height: 88px;
-    /* width: 100vh;*/
-}
-
-.header__Layout {
-    display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-
 /* боковое меню */
 
 .sidebar {
-    box-shadow: 5px 0 20px -5px rgba(0, 0, 0, 0.3);
-    margin-right: 20px;
-    float: left;
     display: flex;
+    flex-direction: column;
     width: 320px;
-    min-height: 100vh;
+    margin-right: 20px;
     border-right: 1px solid #cac8ca;
+    box-shadow: 5px 0 20px -5px rgba(0, 0, 0, 0.3);
     /* overflow-y: auto; */
 }
 
@@ -153,204 +382,4 @@ header {
 .contacts {
     display: flex;
     flex-direction: column;
-}
-
-/*мейн*/
-
-main {
-    width: 100vh;
-}
-
-.main-layout {
-    display: flex;
-    background-color: #f8f8f8;
-}
-
-.title__text {
-    font-family: var(--text-bold);
-    position: relative;
-    padding-left: 20px;
-}
-
-.title__text::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    width: 5px;
-    height: 40px;
-    border-radius: 0 5px 5px 0;
-    background-color: aquamarine;
-}
-
-.about__text > p {
-    font-family: var(--text-regular);
-}
-
-
-/**/
-
-
-/*кнопки*/
-
-button,
-a {
-    cursor: pointer;
-}
-
-/* button:active, a:active,  {
-	background-color: var(--color-pink);
-	transform: translateY(1px);
-} */
-
-.buttons {
-    display: flex;
-}
-
-.buttons > li {
-    list-style: none;
-}
-
-.btn__red {
-    display: flex;
-    align-items: center;
-    border: none; /* none заменить? (видео)*/
-    background-color: var(--color-pink);
-    padding: auto;
-
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    margin-left: 10px;
-
-    border-radius: 50%;
-    justify-content: center;
-
-    transition: all 0.3s ease;
-
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.btn__red:hover {
-    transform: scale(1.15);
-    transition: all 0.3s ease;
-}
-
-.btn__red:active {
-    filter: hue-rotate(-15deg);
-    transform: scale(1.2) rotate(9deg);
-}
-
-/**/
-
-.button__arrow {
-    display: flex;
-    border: none;
-    background-color: transparent;
-    margin-bottom: 10px;
-    gap: 8px;
-    font-family: var(--text-regular);
-}
-
-/**/
-
-.btn__lang {
-    border: none;
-    width: 25px;
-    height: 24px;
-    font-family: var(--text-regular);
-    background-color: var(--color-white);
-    margin-left: 5px;
-}
-
-.btn__lang:hover {
-    color: var(--color-gray);
-}
-
-/**/
-
-.about__list {
-    display: flex;
-    gap: 5px;
-}
-
-.about__list__btn {
-    border: 2px solid transparent;
-    width: 1fr;
-    height: 40px;
-    background-color: transparent;
-    font-family: var(--text-regular);
-    font-size: 16px;
-    border-radius: 6px;
-    white-space: nowrap;
-}
-
-.about__list__btn:hover {
-    border: 2px solid #b8ffec;
-}
-
-/*иконки*/
-
-.btn-exit {
-    background-image: url(/image/exit.svg);
-}
-
-.btn-poisk {
-    background-image: url(/image/lupa.svg);
-}
-
-.btn-call {
-    background-image: url(/image/call.svg);
-}
-
-.btn-chat {
-    background-image: url(/image/chat.svg);
-}
-
-.btn-people {
-    background-image: url(/image/people.svg);
-}
-
-.btn-burger {
-    background-image: url(/image/burger.svg);
-}
-
-.btn-repair {
-    background-image: url(/image/repair.svg);
-}
-
-.btn-check {
-    background-image: url(/image/checkstatus.svg);
-}
-
-/*футер*/
-
-
-/*шрифты*/
-
-@font-face {
-    font-family: "TTLakesBold";
-    src: url("../../fonts/TTLakes-Bold.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "TTLakesRegular";
-    src: url("../../fonts/TTLakes-Regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "TTLakesMedium";
-    src: url("../../fonts/TTLakes-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
 }

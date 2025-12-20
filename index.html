@@ -1,101 +1,89 @@
 <!DOCTYPE html>
-
 <html lang="ru">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-
         <title>kva</title>
         <!--иконка вкладки <link rel="icon" type=""> -->
     </head>
 
-    <body class="body">
+    <body>
         <!--боковое меню-->
         <aside class="sidebar">
-            <div>
-                <!-- без этого див все сьезжает-->
+            <header>
+                <button class="btn__red btn-exit"></button>
 
-                <header class="header__Layout">
-                    <button class="btn__red btn-exit"></button>
+                <a href="#" class="logo"> <img src="image/logo.svg" alt="logo CPS" /> </a>
 
-                    <a href="#" class="logo"> <img src="image/logo.svg" alt="logo CPS" /> </a>
+                <button class="btn__red btn-poisk"></button>
+            </header>
 
-                    <button class="btn__red btn-poisk"></button>
-                </header>
+            <nav class="sidebar__nav" aria-label="меню">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link"> Ремонт техники</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">Услуги и сервисы</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">Корпоративным клиентам</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">Продавцам техники</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">Партнерам</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">Производителям</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">Наши сервисные центры</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
 
-                <nav class="sidebar__nav" aria-label="меню">
-                    <ul class="sidebar__list">
-                        <li class="sidebar__item">
-                            <a href="#" class="sidebar__link"> Ремонт техники</a>
-                        </li>
-                        <li class="sidebar__item">
-                            <a href="#" class="sidebar__link">Услуги и сервисы</a>
-                        </li>
-                        <li class="sidebar__item">
-                            <a href="#" class="sidebar__link">Корпоративным клиентам</a>
-                        </li>
-                        <li class="sidebar__item">
-                            <a href="#" class="sidebar__link">Продавцам техники</a>
-                        </li>
-                        <li class="sidebar__item">
-                            <a href="#" class="sidebar__link">Партнерам</a>
-                        </li>
-                        <li class="sidebar__item">
-                            <a href="#" class="sidebar__link">Производителям</a>
-                        </li>
-                        <li class="sidebar__item">
-                            <a href="#" class="sidebar__link">Наши сервисные центры</a>
-                        </li>
-                        <li class="sidebar__item">
-                            <a href="#" class="sidebar__link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
+            <footer class="sidebar__footer">
+                <ul class="buttons">
+                    <li><button class="btn__red btn-call"></button></li>
+                    <li><button class="btn__red btn-chat"></button></li>
+                    <li><button class="btn__red btn-people"></button></li>
+                </ul>
 
-                <footer class="sidebar__footer">
-                    <ul class="buttons">
-                        <li><button class="btn__red btn-call"></button></li>
-                        <li><button class="btn__red btn-chat"></button></li>
-                        <li><button class="btn__red btn-people"></button></li>
-                    </ul>
+                <address class="contacts">
+                    <a class="mail" href="mailto:mail@cps.com">mail@cps.com</a>
 
-                    <address class="contacts">
-                        <a class="mail" href="mailto:mail@cps.com">mail@cps.com</a>
+                    <a href="tel:88008908900" class="tel">8 800 890 8900</a>
+                </address>
 
-                        <a href="tel:88008908900" class="tel">8 800 890 8900</a>
-                    </address>
-
-                    <ul class="buttons">
-                        <li><button class="btn__lang">RU</button></li>
-                        <li><button class="btn__lang">EN</button></li>
-                        <li><button class="btn__lang">CH</button></li>
-                    </ul>
-                </footer>
-            </div>
+                <ul class="buttons">
+                    <li><button class="btn__lang">RU</button></li>
+                    <li><button class="btn__lang">EN</button></li>
+                    <li><button class="btn__lang">CH</button></li>
+                </ul>
+            </footer>
         </aside>
-
-        <header class="header">
-            <div class="header__Layout">
-                <!---->
+        <div class="content">
+            <header>
                 <!--меню бурер полоски переделать-->
                 <nav class="menu">
                     <button class="btn__red btn-burger"></button>
                 </nav>
 
-                <a href="#" class="logo">
-                    <img src="image/logo.svg" alt="logo CPS" />
-                </a>
+                <a href="#" class="logo"><img src="image/logo.svg" alt="logo CPS" /></a>
 
                 <div class="buttons">
                     <button class="btn__red btn-repair"></button>
                     <button class="btn__red btn-check"></button>
                 </div>
-            </div>
-        </header>
+            </header>
 
-        <main>
-            <div class="main-layout">
+            <main>
                 <section class="about">
                     <!---->
 
@@ -137,9 +125,62 @@
                 </section>
 
                 <!---->
-            </div>
-        </main>
+                <section class="brand">
+                    <div class="brand__title">Ремонт техники различных брендов</div>
 
-        <footer></footer>
+                    <ul class="brand__list">
+                        <li class="brand__item">
+                            <img src="/image/lenovo.png" alt="lenovo" />
+                            <button class="brand__btn"></button>
+                        </li>
+                        <li class="brand__item">
+                            <img src="/image/samsung.png" alt="samsung" />
+                            <button class="brand__btn"></button>
+                        </li>
+                        <li class="brand__item">
+                            <img src="/image/apple.png" alt="apple" />
+                            <button class="brand__btn"></button>
+                        </li>
+                        <li class="brand__item">
+                            <img src="/image/sonic.png" alt="sonic" />
+                            <button class="brand__btn"></button>
+                        </li>
+                        <li class="brand__item">
+                            <img src="/image/bosch.png" alt="bosch" />
+                            <button class="brand__btn"></button>
+                        </li>
+                        <li class="brand__item">
+                            <img src="/image/hp.png" alt="hp" />
+                            <button class="brand__btn"></button>
+                        </li>
+                        <li class="brand__item">
+                            <img src="/image/aser.png" alt="aser" />
+                            <button class="brand__btn"></button>
+                        </li>
+                        <li class="brand__item">
+                            <img src="/image/sony.png" alt="sony" />
+                            <button class="brand__btn"></button>
+                        </li>
+                        <li class="brand__item">
+                            <img src="/image/lenovo.png" alt="lenovo" />
+                            <button class="brand__btn"></button>
+                        </li>
+                        <li class="brand__item">
+                            <img src="/image/samsung.png" alt="samsung" />
+                            <button class="brand__btn"></button>
+                        </li>
+                        <li class="brand__item">
+                            <img src="/image/apple.png" alt="apple" />
+                            <button class="brand__btn"></button>
+                        </li>
+                    </ul>
+
+                    <button>Скрыть</button>
+
+                </section>
+            </main>
+
+            <footer></footer>
+        </div>
     </body>
 </html>
