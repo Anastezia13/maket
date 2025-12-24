@@ -5,7 +5,7 @@
 :псевдокласс
 ::псевдоэлемент (чекбоксы) 
 @import url("styles/button.css");
-* {}
+* {    margin: 0;    padding: 0;    box-sizing: border-box;    font-family: var(--text-regular); }
 
 для поиска: шрифты фото иконки кнопки  бренды       
 боковое меню          
@@ -34,6 +34,10 @@ body {
 
 li {
     list-style: none;
+}
+
+.layout {
+    max-width: 1120px;
 }
 
 /*хедер*/
@@ -76,6 +80,7 @@ main {
 
 .about__text > p {
     font-family: var(--text-regular);
+    max-width: 490px;
 }
 
 /**/
@@ -100,6 +105,10 @@ main {
     border: 2px solid #b8ffec;
 }
 
+.about__info {
+    display: flex;
+    flex-direction: row;
+}
 
 /*бренды*/
 
@@ -112,6 +121,8 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 10px 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .brand__item {
@@ -122,11 +133,16 @@ main {
     border: 1px solid var(--color-gray);
     border-radius: 6px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    
 }
 
-.brand__btn {   
+.brand__item > img {
+    max-width: 128px;
+    object-fit: contain; 
+}
+
+.brand__btn {
     width: 40px;
     height: 40px;
     border: 2px solid var(--color-pink);
@@ -135,12 +151,6 @@ main {
     background-image: url(image/brand.svg);
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.brand__item > img {
-    width: 108px;
-    height: 32px;
-    object-fit: contain;
 }
 
 /**/
@@ -200,9 +210,28 @@ a {
     display: flex;
     border: none;
     background-color: transparent;
-    margin-bottom: 10px;
     gap: 8px;
-    font-family: var(--text-regular);
+    font-family: var(--text-medium);
+    position: relative;
+    padding-left: 20px;
+}
+
+.button__arrow::before {
+    content: "";
+    position: absolute;
+    background-image: url(image/arrow.svg);
+    width: 8px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.close::before {
+    transform: translateY(-50%) rotate(180deg);
 }
 
 /**/
@@ -348,10 +377,10 @@ a {
 .sidebar__link:hover::before {
     content: "";
     position: absolute;
+    display: flex;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    display: flex;
     width: 5px;
     height: 40px;
     border-radius: 0 5px 5px 0;
