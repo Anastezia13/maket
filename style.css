@@ -115,6 +115,11 @@ main {
 .brand {
     display: flex;
     flex-direction: column;
+    min-width: 100vh;
+}
+
+.brand__title {
+    padding: 20px;
 }
 
 .brand__list {
@@ -134,12 +139,11 @@ main {
     border-radius: 6px;
     display: flex;
     justify-content: space-between;
-    
 }
 
 .brand__item > img {
     max-width: 128px;
-    object-fit: contain; 
+    object-fit: contain;
 }
 
 .brand__btn {
@@ -151,6 +155,41 @@ main {
     background-image: url(image/brand.svg);
     background-repeat: no-repeat;
     background-position: center;
+}
+
+
+/**/
+
+.btn-arr {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    gap: 8px;
+    font-family: var(--text-medium);
+    position: relative;
+    padding-left: 20px;
+}
+
+.btn-arr::before {
+    content: "";
+    position: absolute;
+    background-image: url(image/arrow.svg);
+    width: 8px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.close { 
+    display: none !important;
+}
+
+.cls-arr::before {
+    transform: translateY(-50%) rotate(180deg);
 }
 
 /**/
@@ -202,36 +241,6 @@ a {
 .btn__red:active {
     filter: hue-rotate(-15deg);
     transform: scale(1.2) rotate(9deg);
-}
-
-/**/
-
-.button__arrow {
-    display: flex;
-    border: none;
-    background-color: transparent;
-    gap: 8px;
-    font-family: var(--text-medium);
-    position: relative;
-    padding-left: 20px;
-}
-
-.button__arrow::before {
-    content: "";
-    position: absolute;
-    background-image: url(image/arrow.svg);
-    width: 8px;
-    height: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.close::before {
-    transform: translateY(-50%) rotate(180deg);
 }
 
 /**/
