@@ -4,12 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
         <title>kva</title>
         <!--иконка вкладки <link rel="icon" type=""> -->
     </head>
 
     <body>
-        <!--боковое меню-->
         <aside class="sidebar">
             <header>
                 <button class="btn__red btn-exit"></button>
@@ -70,7 +70,6 @@
         </aside>
         <div class="layout">
             <header>
-                <!--меню бурер полоски переделать-->
                 <nav class="menu">
                     <button class="btn__red btn-burger"></button>
                 </nav>
@@ -85,13 +84,9 @@
 
             <main>
                 <section class="about">
-                    <!---->
-
                     <div class="about__title">
                         <h1 class="title__text">Услуги и сервисы</h1>
                     </div>
-
-                    <!---->
 
                     <div class="about__list">
                         <button class="about__list__btn">Ремонтируемые бренды</button>
@@ -102,9 +97,7 @@
                         <button class="about__list__btn">Отзывы</button>
                     </div>
 
-                    <!---->
-
-                    <!-- <article class="about__info">
+                    <article class="about__info">
                         <div class="about__text">
                             <p>
                                 Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы
@@ -122,12 +115,9 @@
                         </div>
 
                         <img class="photo1" src="image/photo1.png" />
-                    </article> -->
-
-                    <!---->
+                    </article>
                 </section>
 
-                <!---->
                 <section class="brand">
                     <div class="brand__title">Ремонт техники различных брендов</div>
 
@@ -179,14 +169,16 @@
                     </ul>
 
                     <div class="">
-                        <button class="btn-arr shw">Показать все</button>
-                        <button class="btn-arr cls cls-arr">Скрыть</button>
+                        <button class="btn-arr" id="show">Показать все</button>
+                        <button class="btn-arr cls-arr" id="hide">Скрыть</button>
                     </div>
                 </section>
             </main>
 
             <footer></footer>
         </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>

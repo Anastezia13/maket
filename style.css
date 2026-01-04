@@ -157,7 +157,6 @@ main {
     background-position: center;
 }
 
-
 /**/
 
 .btn-arr {
@@ -184,7 +183,7 @@ main {
     transform: translateY(-50%);
 }
 
-.close { 
+.close {
     display: none !important;
 }
 
@@ -192,55 +191,60 @@ main {
     transform: translateY(-50%) rotate(180deg);
 }
 
-/**/
+/*свайпер*/
+
+.swiper {
+    display: flex;
+    flex-direction: row;
+}
+
+
 
 /*футер*/
 
 /*кнопки*/
 
-button,
 a {
     cursor: pointer;
 }
 
-/* button:active, a:active,  {
+/* a:active,  {
 	background-color: var(--color-pink);
 	transform: translateY(1px);
 } */
+
+button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none; /* none заменить 0? (видео)*/
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.15);
+}
+
+button:active {
+    filter: hue-rotate(-15deg);
+    transform: scale(1.2) rotate(9deg);
+}
+
+/*  */
 
 .buttons {
     display: flex;
 }
 
 .btn__red {
-    display: flex;
-    align-items: center;
-    border: none; /* none заменить? (видео)*/
     background-color: var(--color-pink);
-    padding: auto;
-
     width: 40px;
     height: 40px;
-    margin-right: 10px;
-    margin-left: 10px;
-
+    margin: 0px 10px;
     border-radius: 50%;
-    justify-content: center;
-
-    transition: all 0.3s ease;
-
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.btn__red:hover {
-    transform: scale(1.15);
-    transition: all 0.3s ease;
-}
-
-.btn__red:active {
-    filter: hue-rotate(-15deg);
-    transform: scale(1.2) rotate(9deg);
 }
 
 /**/
