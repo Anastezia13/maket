@@ -99,7 +99,13 @@ const swiper = new Swiper(".swiper", {
 
     slidesPerView: 'auto',
     spaceBetween: 16,
+    slidesPerView: 1.2, 
 
-    
+
+
+
+
+
+
 });
 
