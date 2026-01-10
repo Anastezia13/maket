@@ -50,7 +50,7 @@ header {
     padding: 10px;
     background-color: #ffffff;
     height: 88px;
-    /* width: 100vh;*/
+    /* width: 100vh; */
 }
 
 /*мейн*/
@@ -192,11 +192,10 @@ main {
 }
 
 /*свайпер*/
- 
-.swiper {
-    width: 340px;
-    height: 150px;
 
+.swiper {
+    width: 240px;
+    height: 150px;
 }
 
 .swiper-slide {
@@ -206,15 +205,25 @@ main {
     box-sizing: border-box;
     border: 1px solid var(--color-gray);
     border-radius: 6px;
-
-
-} 
-.swiper-slide > img {
-    max-width: 128px;
-    object-fit: contain;
 }
 
+.swiper-slide img {
+    max-width: 128px;
+    max-height: 52px;
+    object-fit: contain;
 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 128px;
+}
+
+.swiper-slide .brand__btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /*футер*/
 
