@@ -195,7 +195,7 @@ main {
 
 .swiper {
     width: 240px;
-    height: 150px;
+    height: 72px;
 }
 
 .swiper-slide {
@@ -224,6 +224,8 @@ main {
     top: 50%;
     transform: translateY(-50%);
 }
+
+
 
 /*футер*/
 
