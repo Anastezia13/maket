@@ -25,7 +25,7 @@
 
 body {
     display: flex;
-    width: 100vh;
+    width: 100%;
     background-color: var(--color-white);
     font-family: var(--text-regular);
     font-size: 20px;
@@ -50,13 +50,13 @@ header {
     padding: 10px;
     background-color: #ffffff;
     height: 88px;
-    /* width: 100vh; */
+    width: 100%;
 }
 
 /*мейн*/
 
 main {
-    width: 100vh;
+    width: 100%;
 }
 
 .title__text {
@@ -114,20 +114,38 @@ main {
 
 .brand {
     display: flex;
+    /* грид? */
     flex-direction: column;
-    min-width: 100vh;
+    min-width: 100%;
 }
 
 .brand__title {
     padding: 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.brand__list {
+    display: none;
+}
+
+@media (min-width: 320px) { 
 .brand__list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px 20px;
     margin: 0;
     padding: 0;
+}
 }
 
 .brand__item {
@@ -194,9 +212,10 @@ main {
 /*свайпер*/
 
 .swiper {
-    width: 240px;
+    width: 256px;
     height: 72px;
     padding-bottom: 45px !important;
+    
 }
 
 .swiper-slide {
