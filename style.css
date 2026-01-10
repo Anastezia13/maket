@@ -130,23 +130,39 @@ main {
 
 
 
-
-
-
-
 .brand__list {
-    display: none;
-}
-
-@media (min-width: 320px) { 
-.brand__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px 20px;
     margin: 0;
     padding: 0;
 }
+
+@media (max-width: 768px) {
+    .brand__list, .btn-arr-sh {
+    display: none;
+    }
 }
+
+@media (min-width: 768px) {
+    .brand__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1440px) {
+    .brand__list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
 
 .brand__item {
     width: 240px;
@@ -215,7 +231,12 @@ main {
     width: 256px;
     height: 72px;
     padding-bottom: 45px !important;
-    
+}
+
+@media (min-width: 769px) {
+.swiper {
+    display: none !important;
+}
 }
 
 .swiper-slide {
