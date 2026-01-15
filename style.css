@@ -4,13 +4,20 @@
 тег 
 :псевдокласс
 ::псевдоэлемент (чекбоксы) 
-@import url("styles/button.css");
-* {    margin: 0;    padding: 0;    box-sizing: border-box;    font-family: var(--text-regular); }
+@import url("styles/main.css");
 
 для поиска: шрифты фото иконки кнопки  бренды       
 боковое меню          
 футер мейн хедер 
 */
+
+* {
+    justify-content: center;
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text-regular); */
+}
 
 :root {
     --text-bold: "TTLakesBold";
@@ -116,19 +123,12 @@ main {
     display: flex;
     /* грид? */
     flex-direction: column;
-    min-width: 100%;
+    /* min-width: 100%; */
 }
 
 .brand__title {
     padding: 20px;
 }
-
-
-
-
-
-
-
 
 .brand__list {
     display: grid;
@@ -138,13 +138,14 @@ main {
     padding: 0;
 }
 
-@media (max-width: 768px) {
-    .brand__list, .btn-arr-sh {
-    display: none;
+@media (max-width: 767px) {
+    .brand__list,
+    .btn-arr-sh {
+        display: none;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1439px) {
     .brand__list {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -154,15 +155,6 @@ main {
         grid-template-columns: repeat(4, 1fr);
     }
 }
-
-
-
-
-
-
-
-
-
 
 .brand__item {
     width: 240px;
@@ -225,6 +217,25 @@ main {
     transform: translateY(-50%) rotate(180deg);
 }
 
+/*виды техники*/
+
+/*цены*/
+
+.price {
+    width: 100%;
+}
+
+.price__title {
+    width: 100%;
+}
+
+.price__tab {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
 /*свайпер*/
 
 .swiper {
@@ -234,9 +245,9 @@ main {
 }
 
 @media (min-width: 769px) {
-.swiper {
-    display: none !important;
-}
+    .swiper {
+        display: none !important;
+    }
 }
 
 .swiper-slide {
@@ -408,14 +419,22 @@ button:active {
 
 /* боковое меню */
 
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    width: 320px;
-    margin-right: 20px;
-    border-right: 1px solid #cac8ca;
-    box-shadow: 5px 0 20px -5px rgba(0, 0, 0, 0.3);
-    /* overflow-y: auto; */
+@media (max-width: 1439px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        margin-right: 20px;
+        border-right: 1px solid #cac8ca;
+        box-shadow: 5px 0 20px -5px rgba(0, 0, 0, 0.3);
+        /* overflow-y: auto; */
+    }
 }
 
 .sidebar__nav {
