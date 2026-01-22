@@ -13,6 +13,7 @@
 
 * {
     justify-content: center;
+    background-color: var(--color-whitegray);
     /* margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -129,7 +130,7 @@ main {
 
 .brand__title {
     padding: 20px;
-    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 100%);
+    background: linear-gradient(45deg, #F8F8F8, #FFFFFF);
 }
 
 .brand__list {
@@ -140,7 +141,7 @@ main {
     padding: 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .brand__list,
     .btn-arr-sh {
         display: none;
@@ -183,6 +184,50 @@ main {
     background-image: url(image/brand.svg);
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/*свайпер*/
+
+.swiper {
+    width: 100%;
+    max-width: 768px;
+    min-width: 320px;
+    height: 72px;
+    padding: 0 16px 45px 16px !important; 
+}
+
+
+
+@media (min-width: 768px) {
+    .swiper {
+        display: none !important;
+    }
+}
+
+.swiper-slide {
+    max-width: 240px;
+    height: 72px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid var(--color-gray);
+    border-radius: 6px;
+}
+
+.swiper-slide img {
+    max-width: 128px;
+    max-height: 52px;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 128px;
+}
+
+.swiper-slide .brand__btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /**/
@@ -236,49 +281,6 @@ main {
     border-radius: 5px;
     overflow: hidden;
     margin-top: 20px;
-}
-
-/*свайпер*/
-
-.swiper {
-    width: 100%;
-    max-width: 768px;
-    min-width: 320px;
-    height: 72px;
-    padding-bottom: 45px !important;
-}
-
-@media (min-width: 769px) {
-    .swiper {
-        display: none !important;
-    }
-}
-
-.swiper-slide {
-    max-width: 240px;
-    height: 72px;
-    padding: 15px;
-    box-sizing: border-box;
-    border: 1px solid var(--color-gray);
-    border-radius: 6px;
-}
-
-.swiper-slide img {
-    max-width: 128px;
-    max-height: 52px;
-    object-fit: contain;
-
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    max-width: 128px;
-}
-
-.swiper-slide .brand__btn {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 /*футер*/
