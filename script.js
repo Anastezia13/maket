@@ -54,17 +54,6 @@ function resize() {
 
 window.addEventListener("resize", resize);
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
 // свайпер
 
 const listItems = document.querySelectorAll(".brand__item");
@@ -88,50 +77,3 @@ const swiper = new Swiper(".swiper", {
     spaceBetween: 16,
     slidesPerView: 1.2,
 });
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-// цены
-
-// prettier-ignore
-
-const prices = [{
-    service: "Диагностика",
-    price: "Бесплатно",
-    time: "30 мин",
-},{
-    service: "Замена дисплея",
-    price: "1 000 ₽",
-    time: "30-120 мин",
-},{
-    service: "Замена полифонического динамика",
-    price: "1 000 ₽",
-    time: "30-120 мин",
-},{
-    service: "Тестирование с выдачей тех. заключения",
-    price: "1 000 ₽",
-    time: "30-120 мин",
-},{
-    service: "Замена программного обеспечения",
-    price: "1 000 ₽",
-    time: "30-120 мин",
-},];
-
-function renderPrise() {
-    const div = document.createElement("div");
-    div.className = "price__tab";
-
-    for (let i = 0; i < prices.length; i++) {
-        const priseItem = prises[i];
-
-        div.insertAdjacentHTML("beforeend", ``);
-    }
-}

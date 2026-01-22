@@ -124,10 +124,12 @@ main {
     /* грид? */
     flex-direction: column;
     /* min-width: 100%; */
+    background-color: var(--color-whitegray);
 }
 
 .brand__title {
     padding: 20px;
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 100%);
 }
 
 .brand__list {
@@ -239,7 +241,9 @@ main {
 /*свайпер*/
 
 .swiper {
-    width: 256px;
+    width: 100%;
+    max-width: 768px;
+    min-width: 320px;
     height: 72px;
     padding-bottom: 45px !important;
 }
@@ -251,7 +255,7 @@ main {
 }
 
 .swiper-slide {
-    width: 240px;
+    max-width: 240px;
     height: 72px;
     padding: 15px;
     box-sizing: border-box;
