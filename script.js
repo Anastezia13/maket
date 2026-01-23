@@ -76,6 +76,11 @@ const swiper = new Swiper(".swiper", {
 
     spaceBetween: 16,
     slidesPerView: 1.2,
+
+    
+    // slidesPerView: 'auto',
+
+    
     initialSlide: 0,
     slidesOffsetBefore: 16,
     slidesOffsetAfter: 16,
