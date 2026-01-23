@@ -48,76 +48,6 @@ li {
     max-width: 1120px;
 }
 
-/*хедер*/
-
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: var(--color-white);
-    height: 88px;
-    width: 100%;
-}
-
-/*мейн*/
-
-main {
-    width: 100%;
-}
-
-.title__text {
-    font-family: var(--text-bold);
-    position: relative;
-    padding-left: 20px;
-}
-
-.title__text::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    width: 5px;
-    height: 40px;
-    border-radius: 0 5px 5px 0;
-    background-color: aquamarine;
-}
-
-.about__text > p {
-    font-family: var(--text-regular);
-    max-width: 490px;
-}
-
-/**/
-
-.about__list {
-    display: flex;
-    gap: 5px;
-}
-
-.about__list__btn {
-    border: 2px solid transparent;
-    width: 1fr;
-    height: 40px;
-    background-color: transparent;
-    font-family: var(--text-regular);
-    font-size: 16px;
-    border-radius: 6px;
-    white-space: nowrap;
-}
-
-.about__list__btn:hover {
-    border: 2px solid #b8ffec;
-}
-
-.about__info {
-    display: flex;
-    flex-direction: row;
-}
-
 /*бренды*/
 
 .brand {
@@ -131,6 +61,7 @@ main {
 .brand__title {
     padding: 20px;
     background: linear-gradient(45deg, #f8f8f8, #ffffff);
+    margin: 20px;
 }
 
 .brand__list {
@@ -263,26 +194,6 @@ main {
     transform: translateY(-50%) rotate(180deg);
 }
 
-/*виды техники*/
-
-/*цены*/
-
-.price {
-    width: 100%;
-}
-
-.price__title {
-    width: 100%;
-}
-
-.price__tab {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-/*футер*/
 
 /*кнопки*/
 
@@ -420,98 +331,4 @@ button:active {
     width: 320px;
     height: 230px;
     top: 358px;
-}
-
-/* боковое меню */
-
-@media (max-width: 1439px) {
-    .sidebar {
-        display: none;
-    }
-}
-
-@media (min-width: 1440px) {
-    .sidebar {
-        display: flex;
-        flex-direction: column;
-        width: 320px;
-        margin-right: 20px;
-        border-right: 1px solid #cac8ca;
-        box-shadow: 5px 0 20px -5px rgba(0, 0, 0, 0.3);
-        /* overflow-y: auto; */
-    }
-}
-
-.sidebar__nav {
-    padding: 5px;
-    min-height: 0;
-}
-
-.sidebar__list {
-    font-family: var(--text-regular);
-    list-style: none;
-    margin: 10px;
-    padding: 0;
-}
-
-.sidebar__item {
-    margin-bottom: 10px;
-}
-
-.sidebar__link {
-    text-decoration: none;
-    color: #000;
-    transition: all 0.3s ease;
-
-    width: 320px;
-    height: 24px;
-
-    font-size: 16px;
-
-    position: relative;
-    padding: 10px;
-}
-
-.sidebar__link:hover {
-    color: var(--color-gray);
-    /*	transform: translateX(10px);*/
-}
-
-.sidebar__link:hover::before {
-    content: "";
-    position: absolute;
-    display: flex;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 5px;
-    height: 40px;
-    border-radius: 0 5px 5px 0;
-    background-color: aquamarine;
-}
-
-.sidebar__footer {
-    margin-top: 10px;
-}
-
-.mail {
-    font-family: var(--text-regular);
-    margin-left: 10px;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #000;
-}
-
-.tel {
-    font-family: var(--text-bold);
-    font-size: 24px;
-    margin-left: 10px;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #000;
-}
-
-.contacts {
-    display: flex;
-    flex-direction: column;
 }
