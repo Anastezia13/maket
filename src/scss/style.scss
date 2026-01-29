@@ -151,7 +151,7 @@ li {
     object-fit: contain;
 }
 
-.brand__btn {
+.brand__btn, .type__btn {
     width: 40px;
     height: 40px;
     border: 2px solid var(--color-pink);
@@ -160,6 +160,16 @@ li {
     background-image: url(../img/brand.svg);
     background-repeat: no-repeat;
     background-position: center;
+}
+
+
+/* тип , цена */
+
+.type__item {
+    width: 240px;
+    height: 160px;
+    border: 1px solid var(--color-gray);
+    border-radius: 6px;
 }
 
 /*свайпер*/
@@ -361,7 +371,7 @@ header {
     padding: 10px;
     background-color: var(--color-white);
     height: 88px;
-    width: 100%;
+    width: auto;
 }
 
 /*мейн*/
