@@ -200,17 +200,23 @@ document.getElementById('closeMenuBtn').onclick = () => {
 
 
 
-
-
 // заказать звонок 
-
-
-
-
 document.querySelector('.btn-call').addEventListener('click', () => {
-    document.querySelector('.call').classList.toggle('active');
+    // Открываем форму
+    document.querySelector('.call').classList.add('active');
+    // Показываем оверлей
+    document.body.classList.add('call-open');
 });
 
 document.getElementById('cls-call').addEventListener('click', () => {
+    // Закрываем форму
     document.querySelector('.call').classList.remove('active');
+    // Скрываем оверлей
+    document.body.classList.remove('call-open');
+});
+
+// Также можно закрывать по клику на оверлей
+document.querySelector('.overlay').addEventListener('click', () => {
+    document.querySelector('.call').classList.remove('active');
+    document.body.classList.remove('call-open');
 });
