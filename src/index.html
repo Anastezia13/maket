@@ -16,7 +16,7 @@
 
         <aside class="sidebar">
             <header>
-                <button class="btn__red btn-exit"></button>
+                <button id="closeMenuBtn" class="btn__red btn-exit"></button>
 
                 <a href="#" class="logo">
                     <img src="img/logo.svg" alt="logo CPS" />
@@ -34,7 +34,9 @@
                         <a href="#" class="sidebar__link">Услуги и сервисы</a>
                     </li>
                     <li class="sidebar__item">
-                        <a href="#" class="sidebar__link">Корпоративным клиентам</a>
+                        <a href="#" class="sidebar__link"
+                            >Корпоративным клиентам</a
+                        >
                     </li>
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">Продавцам техники</a>
@@ -46,7 +48,9 @@
                         <a href="#" class="sidebar__link">Производителям</a>
                     </li>
                     <li class="sidebar__item">
-                        <a href="#" class="sidebar__link">Наши сервисные центры</a>
+                        <a href="#" class="sidebar__link"
+                            >Наши сервисные центры</a
+                        >
                     </li>
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">Контакты</a>
@@ -75,12 +79,14 @@
             </footer>
         </aside>
 
-        <div class="layout"></div>
+        <div class="layout">
             <!-- хедер -->
 
             <header>
                 <nav class="menu">
-                    <button class="btn__red btn-burger"></button>
+                    <button
+                        id="openMenuBtn"
+                        class="btn__red btn-burger"></button>
                 </nav>
 
                 <a href="#" class="logo"
@@ -215,10 +221,10 @@
                     </div>
                 </section>
 
-                <!-- тип , цена -->
-
                 <section class="type">
-                    <div class="type__title">Ремонт различных видов техники</div>
+                    <div class="type__title">
+                        РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ
+                    </div>
 
                     <ul class="type__list">
                         <li class="type__item">
@@ -240,7 +246,9 @@
                     </ul>
 
                     <div class="btn-arr-sh">
-                        <button class="btn-arr" id="showBrand">Показать все</button>
+                        <button class="btn-arr" id="showBrand">
+                            Показать все
+                        </button>
                     </div>
 
                     <div class="swiper">
@@ -253,15 +261,103 @@
                     <div class="price__title">ЦЕНЫ НА УСЛУГИ</div>
 
                     <div class="price__tab">
-                        <div class="price__item-title"></div>
-
-                        <div class="price__item"></div>
+                        <table class="price-table"></table>
                     </div>
+                </section>
+
+                <section>
+                    <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+                    <p class="kom">Получить коммерческое предложение</p>
                 </section>
             </main>
 
-            <footer></footer>
+            <footer class="fot">
+                <p>© 2019 CPS Разработано командой Apesong </p>
+                <p>Политика конфиденциальности</p>
+                <p>Информация, размещенная на данной странице, не является публичной офертой</p>
+            </footer>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="call">
+            <button id="cls-call" class="btn__red btn-exit"></button>
+
+            <h2 class="title__text">Заказать звонок</h2>
+
+            <input type="tel" placeholder="Телефон" />
+
+            <p>
+                Нажимая "отправить", вы даете согласие на обработку персональных
+                данных и соглашаетесь с нашей политикой конфиденциальности
+            </p>
+
+            <button class="send__call">ОТПРАВИТЬ</button>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="feedback"></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </body>

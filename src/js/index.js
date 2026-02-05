@@ -3,7 +3,7 @@
 
 import '../scss/style.scss'
 
-
+// бренды
 
 let itemsPerRow = 4;
 
@@ -97,8 +97,126 @@ const swiper = new Swiper(".swiper", {
 
 
 
+// типы
 
 
 
 
 
+
+
+
+
+
+
+
+
+// цены
+
+
+const services = [
+    ["Диагностика", "Бесплатно", "30 мин"],
+    ["Замена дисплея", "1 000 ₽", "30–120 мин"],
+    ["Замена полифонического динамика", "1 000 ₽", "30–120 мин"],
+    ["Тестирование с выдачей технического заключения", "1 000 ₽", "30–120 мин"],
+    ["Замена программного обеспечения", "1 000 ₽", "30–120 мин"]
+];
+
+
+
+document.querySelector('.price__tab').innerHTML = `
+    <table class="price-table">
+        <tr><th>Услуга</th><th>Цена</th><th>Срок</th><th></th></tr>
+        ${services.map(s => `
+            <tr>
+                <td>${s[0]}</td>
+                <td>${s[1]}</td>
+                <td>${s[2]}</td>
+                <td><button class="order-btn">ЗАКАЗАТЬ ></button></td>
+            </tr>
+        `).join('')}
+    </table>
+`;
+
+
+
+
+
+
+// боковое меню
+
+
+
+
+
+
+// Открыть меню
+document.getElementById('openMenuBtn').onclick = () => {
+    document.getElementById('sidebar').style.display = 'flex';
+};
+
+// Закрыть меню
+document.getElementById('closeMenuBtn').onclick = () => {
+    document.getElementById('sidebar').style.display = 'none';
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// заказать звонок 
+
+
+
+// Открыть
+document.querySelector('.btn-call').addEventListener('click', function() {
+    document.querySelector('.call').style.display = 'block';
+});
+
+// Закрыть
+document.getElementById('cls-call').addEventListener('click', function() {
+    document.querySelector('.call').style.display = 'none';
+});
+
+// Скрыть окно сразу при загрузке
+window.onload = function() {
+    document.querySelector('.call').style.display = 'none';
+};
