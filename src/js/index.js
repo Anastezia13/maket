@@ -206,17 +206,11 @@ document.getElementById('closeMenuBtn').onclick = () => {
 
 
 
-// Открыть
-document.querySelector('.btn-call').addEventListener('click', function() {
-    document.querySelector('.call').style.display = 'block';
+
+document.querySelector('.btn-call').addEventListener('click', () => {
+    document.querySelector('.call').classList.toggle('active');
 });
 
-// Закрыть
-document.getElementById('cls-call').addEventListener('click', function() {
-    document.querySelector('.call').style.display = 'none';
+document.getElementById('cls-call').addEventListener('click', () => {
+    document.querySelector('.call').classList.remove('active');
 });
-
-// Скрыть окно сразу при загрузке
-window.onload = function() {
-    document.querySelector('.call').style.display = 'none';
-};

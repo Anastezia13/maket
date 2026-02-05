@@ -12,10 +12,14 @@
 
 @import './styles/about.scss';
 @import './styles/brand.scss';
+@import './styles/call.scss';
+@import './styles/feedback.scss';
+@import './styles/footer.scss';
 @import './styles/header.scss';
 @import './styles/prise.scss';
 @import './styles/sidebar.scss';
 @import './styles/type.scss';
+
 
 * {
     background-color: var(--color-whitegray);
