@@ -8,9 +8,8 @@
 
 
 
-/* боковое меню */
 .sidebar {
-    display: none; /* Всегда скрыто по умолчанию */
+    display: none; 
     position: fixed;
     left: 0;
     top: 0;
@@ -22,12 +21,12 @@
     box-shadow: 5px 0 20px -5px rgba(0, 0, 0, 0.3);
 }
 
-/* Класс для открытого меню */
+
 .sidebar--open { 
     display: flex; 
 }
 
-/* На десктопе всегда показываем */
+
 @media (min-width: 1440px) {
     .sidebar {
         display: flex;
