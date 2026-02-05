@@ -1,22 +1,50 @@
+
+
+
 /* боковое меню */
 
-@media (max-width: 1439px) {
-    .sidebar {
-        display: none;
-    }
+
+
+
+
+
+/* боковое меню */
+.sidebar {
+    display: none; /* Всегда скрыто по умолчанию */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 320px;
+    height: 100vh;
+    flex-direction: column;
+    background: white;
+    z-index: 1000;
+    box-shadow: 5px 0 20px -5px rgba(0, 0, 0, 0.3);
 }
 
+/* Класс для открытого меню */
+.sidebar--open { 
+    display: flex; 
+}
+
+/* На десктопе всегда показываем */
 @media (min-width: 1440px) {
     .sidebar {
         display: flex;
-        flex-direction: column;
-        width: 320px;
+        position: relative;
         margin-right: 20px;
         border-right: 1px solid #cac8ca;
-        box-shadow: 5px 0 20px -5px rgba(0, 0, 0, 0.3);
-        /* overflow-y: auto; */
     }
 }
+
+
+
+
+
+
+
+
+
 
 .sidebar__nav {
     padding: 5px;

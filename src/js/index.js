@@ -146,26 +146,13 @@ document.querySelector('.price__tab').innerHTML = `
 // боковое меню
 
 
+function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('sidebar--open');
+}
 
-
-
-
-// Открыть меню
-document.getElementById('openMenuBtn').onclick = () => {
-    document.getElementById('sidebar').style.display = 'flex';
-};
-
-// Закрыть меню
-document.getElementById('closeMenuBtn').onclick = () => {
-    document.getElementById('sidebar').style.display = 'none';
-};
-
-
-
-
-
-
-
+document.querySelector('.btn-burger').addEventListener('click', toggleSidebar);
+document.querySelector('.btn-exit').addEventListener('click', toggleSidebar);
 
 
 
