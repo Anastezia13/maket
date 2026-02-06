@@ -1,15 +1,7 @@
-
-
-
 /* боковое меню */
 
-
-
-
-
-
 .sidebar {
-    display: none; 
+    display: none;
     position: fixed;
     left: 0;
     top: 0;
@@ -21,11 +13,9 @@
     box-shadow: 5px 0 20px -5px rgba(0, 0, 0, 0.3);
 }
 
-
-.sidebar--open { 
-    display: flex; 
+.sidebar--open {
+    display: flex;
 }
-
 
 @media (min-width: 1440px) {
     .sidebar {
@@ -35,15 +25,6 @@
         border-right: 1px solid #cac8ca;
     }
 }
-
-
-
-
-
-
-
-
-
 
 .sidebar__nav {
     padding: 5px;

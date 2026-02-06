@@ -1,11 +1,6 @@
-
-
-
-
 // .type {
-    
-// }
 
+// }
 
 .type__title {
     width: 100%;
@@ -14,18 +9,10 @@
     margin: 20px;
 }
 
-
 .type__list {
     display: flex;
     gap: 15px;
-
 }
-
-
-
-
-
-
 
 .type__item {
     width: 240px;
@@ -46,9 +33,8 @@
     background-image: url(../img/brand.svg);
     background-repeat: no-repeat;
     background-position: center;
-    
+
     position: absolute;
     bottom: 15px;
-    right: 15px; 
+    right: 15px;
 }
-

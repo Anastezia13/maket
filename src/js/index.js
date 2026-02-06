@@ -125,9 +125,6 @@ function toggleSidebar() {
 document.querySelector('.btn-burger').addEventListener('click', toggleSidebar)
 document.querySelector('.btn-exit').addEventListener('click', toggleSidebar)
 
-
-
-
 // заказать звонок
 document.querySelector('.btn-call').addEventListener('click', () => {
     document.querySelector('.call').classList.add('active')
@@ -142,4 +139,20 @@ document.getElementById('cls-call').addEventListener('click', () => {
 document.querySelector('.overlay').addEventListener('click', () => {
     document.querySelector('.call').classList.remove('active')
     document.body.classList.remove('call-open')
+})
+
+// обратная связь
+document.querySelector('.btn-chat').addEventListener('click', () => {
+    document.querySelector('.feedback').classList.add('active')
+    document.body.classList.add('feedback-open')
+})
+
+document.getElementById('cls-feedback').addEventListener('click', () => {
+    document.querySelector('.feedback').classList.remove('active')
+    document.body.classList.remove('feedback-open')
+})
+
+document.querySelector('.overlay').addEventListener('click', () => {
+    document.querySelector('.feedback').classList.remove('active')
+    document.body.classList.remove('feedback-open')
 })
