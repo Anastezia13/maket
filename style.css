@@ -207,6 +207,90 @@
 .call-open .overlay {
   display: block; }
 
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: var(--text-regular); }
+
+textarea {
+  resize: vertical; }
+
+.send__call {
+  width: 136px;
+  height: 32px;
+  background: var(--color-pink);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-family: var(--text-regular);
+  font-weight: bold;
+  float: right; }
+
+.call .btn-exit,
+.feedback .btn-exit {
+  position: absolute;
+  right: 400px;
+  display: none; }
+
+.call.active .btn-exit,
+.feedback.active .btn-exit {
+  display: flex; }
+
+.send__txt {
+  font-family: var(--text-regular);
+  font-size: 14px; }
+
+.privacy-link {
+  color: var(--color-pink);
+  text-decoration: none; }
+
+.privacy-link:hover {
+  color: var(--color-black);
+  text-decoration: underline; }
+
+.feedback {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 100vh;
+  background: white;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 9999;
+  padding: 24px;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 16px; }
+  .feedback.active {
+    transform: translateX(0); }
+  .feedback input,
+  .feedback textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: var(--text-regular); }
+  .feedback textarea {
+    resize: vertical; }
+  .feedback .send__feedback {
+    width: 136px;
+    height: 32px;
+    background: var(--color-pink);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-family: var(--text-regular);
+    font-weight: bold;
+    align-self: flex-end; }
+
+.feedback-open .overlay {
+  display: block; }
+
 .fot {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
@@ -426,12 +510,6 @@ header {
   bottom: 15px;
   right: 15px; }
 
-* {
-  /* margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--text-regular); */ }
-
 :root {
   --text-bold: 'TTLakesBold';
   --text-regular: 'TTLakesRegular';
@@ -442,6 +520,7 @@ header {
   --color-gray: #7e7e82; }
 
 body {
+  background-color: var(--color-whitegray);
   display: flex;
   justify-content: center;
   max-width: 1440px;
@@ -501,16 +580,16 @@ button:active {
   font-display: swap; }
 
 @font-face {
-  font-family: 'TTLakesRegular';
-  src: url(./fonts/TTLakes-Regular.woff) format("woff");
-  font-weight: 400;
+  font-family: 'TTLakesMedium';
+  src: url(./fonts/TTLakes-Medium.woff) format("woff");
+  font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'TTLakesMedium';
-  src: url(./fonts/TTLakes-Medium.woff) format("woff");
-  font-weight: 500;
+  font-family: 'TTLakesRegular';
+  src: url(./fonts/TTLakes-Regular.woff) format("woff");
+  font-weight: 400;
   font-style: normal;
   font-display: swap; }
 
