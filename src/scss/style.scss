@@ -42,28 +42,21 @@
 body {
     background-color: var(--color-whitegray);
     display: flex;
-    justify-content: center;
-    max-width: 1440px;
-    /* background-color: var(--color-white); */
+    width: 100%;
+    margin: 0;
     font-family: var(--text-regular);
-    font-size: 20px;
-    font-weight: 500;
-
     z-index: 1;
-}
-
-li {
-    list-style: none;
-}
-
-/*мейн*/
-
-main {
-    max-width: 1440px;
 }
 
 .layout {
     max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
 }
 
 /*кнопки*/
