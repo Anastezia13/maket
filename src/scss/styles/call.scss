@@ -83,3 +83,34 @@ textarea {
     color: var(--color-black);
     text-decoration: underline;
 }
+
+@media (max-width: 767px) {
+    .call,
+    .feedback {
+        width: 100% !important;
+        right: 0 !important;
+        box-sizing: border-box !important;
+        overflow-y: auto !important;
+    }
+
+    body.call-open,
+    body.feedback-open {
+        overflow: hidden !important;
+        position: fixed !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .call .btn-exit,
+    .feedback .btn-exit {
+        position: absolute !important;
+        right: 24px !important;
+        top: 24px !important;
+        display: none !important;
+    }
+
+    .call.active .btn-exit,
+    .feedback.active .btn-exit {
+        display: flex !important;
+    }
+}
