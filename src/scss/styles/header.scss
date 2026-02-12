@@ -62,3 +62,26 @@ header {
 .btn-check {
     background-image: url(../img/checkstatus.svg);
 }
+
+
+/* АДАПТИВНЫЙ HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    margin: 0;
+    position: static;
+    transform: none;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

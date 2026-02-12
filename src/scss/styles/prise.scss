@@ -2,15 +2,14 @@
 
 .price {
     width: 100%;
-    max-width: 1440px;
+    max-width: 100%;
+    overflow-x: hidden;
     margin: 0 auto;
 }
 
 .price__title {
-    width: 100%;
-    padding: 20px;
     background: linear-gradient(45deg, #f8f8f8, #ffffff);
-    margin: 20px;
+    box-sizing: border-box;
 }
 
 .price-table {

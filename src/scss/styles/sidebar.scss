@@ -17,6 +17,7 @@ body.sidebar--open {
     z-index: 1000;
     box-shadow: 5px 0 20px -5px rgba(0, 0, 0, 0.3);
     z-index: 9999;
+    flex-shrink: 0;
 }
 
 .sidebar--open {

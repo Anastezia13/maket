@@ -9,10 +9,12 @@
 }
 
 .brand__title {
-    width: 100%;
-    padding: 20px;
     background: linear-gradient(45deg, #f8f8f8, #ffffff);
-    margin: 20px;
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
 }
 
 .brand__list {

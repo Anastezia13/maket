@@ -178,8 +178,12 @@ function toggleSidebar() {
     const sidebar = document.querySelector('.sidebar')
     sidebar.classList.toggle('sidebar--open')
 
-    if (sidebar.classList.contains('sidebar--open')) {
-        document.body.classList.add('sidebar--open')
+    if (window.innerWidth < 1440) {
+        if (sidebar.classList.contains('sidebar--open')) {
+            document.body.classList.add('sidebar--open')
+        } else {
+            document.body.classList.remove('sidebar--open')
+        }
     } else {
         document.body.classList.remove('sidebar--open')
     }

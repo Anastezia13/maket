@@ -9,3 +9,21 @@
 //     height: 10px;
 //     background-image: url();
 // }
+
+
+/* АДАПТИВНЫЙ FOOTER */
+.fot {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 30px 0;
+}
+
+@media (min-width: 768px) {
+    .fot {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}

@@ -121,3 +121,17 @@ button:active {
     font-style: normal;
     font-display: swap;
 }
+
+
+/* ЗАГОЛОВКИ */
+.title__text {
+    font-size: clamp(24px, 5vw, 32px);
+}
+
+.brand__title,
+.type__title,
+.price__title {
+    font-size: clamp(16px, 4vw, 24px);
+    padding: 16px;
+    width: calc(100% + 32px);
+}
