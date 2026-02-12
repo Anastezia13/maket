@@ -69,30 +69,28 @@
     background-position: center;
 }
 
-/*свайпер*/
-
+/* свайпер */
 .swiper {
     width: 100%;
-    max-width: 768px;
     min-width: 320px;
-    height: 72px;
     padding: 0 16px 45px 16px !important;
+    overflow: hidden;
+    display: none;
 }
 
-@media (min-width: 769px) {
-    .swiper {
-        display: none !important;
-    }
+.swiper-wrapper {
+    display: flex;
 }
 
 .swiper-slide {
-    max-width: 240px;
-    height: 72px;
-    padding: 15px;
-    box-sizing: border-box;
-    border: 1px solid var(--color-gray);
-    border-radius: 6px;
-    background-color: var(--color-white);
+    flex-shrink: 0;
+    //     max-width: 240px;
+    //     height: 72px;
+    //     padding: 15px;
+    //     box-sizing: border-box;
+    //     border: 1px solid var(--color-gray);
+    //     border-radius: 6px;
+    //     background-color: var(--color-white);
 }
 
 .swiper-slide img {
@@ -109,6 +107,53 @@
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+/* бренд типы цены */
+.swiper--brand .swiper-slide {
+    width: 240px;
+    height: 72px;
+    border: 1px solid var(--color-gray);
+    border-radius: 6px;
+    padding: 15px;
+    background-color: var(--color-white);
+}
+
+.swiper--type .swiper-slide {
+    width: 240px;
+    height: 160px;
+    border: 1px solid var(--color-gray);
+    border-radius: 6px;
+    padding: 10px;
+    background-color: var(--color-white);
+}
+
+.swiper--price .swiper-slide {
+    width: 240px;
+    border: 1px solid var(--color-gray);
+    border-radius: 6px;
+    padding: 16px;
+    background-color: var(--color-white);
+}
+
+/* моб */
+@media (max-width: 768px) {
+    .brand__list,
+    .type__list,
+    .price-table,
+    .btn-arr-sh {
+        display: none !important;
+    }
+    .swiper {
+        display: block !important;
+    }
+}
+
+/* десктоп */
+@media (min-width: 769px) {
+    .swiper {
+        display: none !important;
+    }
 }
 
 /**/

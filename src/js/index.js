@@ -61,28 +61,86 @@ function resize() {
 
 window.addEventListener('resize', resize)
 
-// свайпер
+// бренды
 
-const listItems = document.querySelectorAll('.brand__item')
+document.addEventListener('DOMContentLoaded', function () {
+    // свайпер бренд
+    const brandItems = document.querySelectorAll('.brand__item')
+    const brandWrapper = document.querySelector(
+        '.swiper--brand .swiper-wrapper'
+    )
 
-const swiperWrapper = document.querySelector('.swiper-wrapper')
+    if (brandItems.length && brandWrapper) {
+        brandWrapper.innerHTML = ''
+        brandItems.forEach((item) => {
+            brandWrapper.innerHTML += `<div class="swiper-slide">${item.innerHTML}</div>`
+        })
 
-listItems.forEach((item) => {
-    swiperWrapper.innerHTML += `
-        <div class="swiper-slide">
-            ${item.innerHTML}
-        </div>
-    `
-})
+        new Swiper('.swiper--brand', {
+            spaceBetween: 16,
+            slidesPerView: 'auto',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            }
+        })
+    }
 
-const swiper = new Swiper('.swiper', {
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-    },
+    // свайпер типы
+    const typeItems = document.querySelectorAll('.type__item')
+    const typeWrapper = document.querySelector('.swiper--type .swiper-wrapper')
 
-    spaceBetween: 16,
-    slidesPerView: 'auto'
+    if (typeItems.length && typeWrapper) {
+        typeWrapper.innerHTML = ''
+        typeItems.forEach((item) => {
+            typeWrapper.innerHTML += `<div class="swiper-slide">${item.innerHTML}</div>`
+        })
+
+        new Swiper('.swiper--type', {
+            spaceBetween: 16,
+            slidesPerView: 'auto',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            }
+        })
+    }
+
+    // свайпер цены
+    const services = [
+        ['Диагностика', 'Бесплатно', '30 мин'],
+        ['Замена дисплея', '1 000 ₽', '30–120 мин'],
+        ['Замена динамика', '1 000 ₽', '30–120 мин'],
+        ['Тестирование', '1 000 ₽', '30–120 мин'],
+        ['Замена ПО', '1 000 ₽', '30–120 мин']
+    ]
+
+    const priceWrapper = document.querySelector(
+        '.swiper--price .swiper-wrapper'
+    )
+
+    if (priceWrapper) {
+        priceWrapper.innerHTML = ''
+        services.forEach((service) => {
+            priceWrapper.innerHTML += `
+                <div class="swiper-slide">
+                    <div>${service[0]}</div>
+                    <div>${service[1]}</div>
+                    <div>${service[2]}</div>
+                    <button class="order-btn">ЗАКАЗАТЬ ></button>
+                </div>
+            `
+        })
+
+        new Swiper('.swiper--price', {
+            spaceBetween: 16,
+            slidesPerView: 'auto',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            }
+        })
+    }
 })
 
 // типы
@@ -116,10 +174,15 @@ document.querySelector('.price__tab').innerHTML = `
 `
 
 // боковое меню
-
 function toggleSidebar() {
     const sidebar = document.querySelector('.sidebar')
     sidebar.classList.toggle('sidebar--open')
+
+    if (sidebar.classList.contains('sidebar--open')) {
+        document.body.classList.add('sidebar--open')
+    } else {
+        document.body.classList.remove('sidebar--open')
+    }
 }
 
 document.querySelector('.btn-burger').addEventListener('click', toggleSidebar)
@@ -136,11 +199,6 @@ document.getElementById('cls-call').addEventListener('click', () => {
     document.body.classList.remove('call-open')
 })
 
-document.querySelector('.overlay').addEventListener('click', () => {
-    document.querySelector('.call').classList.remove('active')
-    document.body.classList.remove('call-open')
-})
-
 // обратная связь
 document.querySelector('.btn-chat').addEventListener('click', () => {
     document.querySelector('.feedback').classList.add('active')
@@ -152,7 +210,18 @@ document.getElementById('cls-feedback').addEventListener('click', () => {
     document.body.classList.remove('feedback-open')
 })
 
+// общий оверлей
 document.querySelector('.overlay').addEventListener('click', () => {
+    // закрыть звонок
+    document.querySelector('.call').classList.remove('active')
+    document.body.classList.remove('call-open')
+
+    // закрыть обратную связь
     document.querySelector('.feedback').classList.remove('active')
     document.body.classList.remove('feedback-open')
+
+    // закрыть сайдбар
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.classList.remove('sidebar--open')
+    document.body.classList.remove('sidebar--open')
 })

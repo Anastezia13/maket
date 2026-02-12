@@ -1,34 +1,44 @@
+body.call-open,
+body.feedback-open,
+body.sidebar--open {
+    overflow: hidden;
+}
+
 /* боковое меню */
 
 .sidebar {
     display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
+    position: sticky;
+    margin-right: 20px;
     width: 320px;
-    height: 100vh;
+    height: auto;
     flex-direction: column;
     background: white;
     z-index: 1000;
     box-shadow: 5px 0 20px -5px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
 }
 
 .sidebar--open {
     display: flex;
 }
 
+.sidebar--open .overlay {
+    display: block;
+}
+
 @media (min-width: 1440px) {
     .sidebar {
         display: flex;
-        position: relative;
-        margin-right: 20px;
-        border-right: 1px solid #cac8ca;
+        box-shadow: none;
     }
 }
 
 .sidebar__nav {
     padding: 5px;
-    min-height: 0;
+    overflow-y: auto;
+    // overflow: hidden;
+    // overflow-y: auto;
 }
 
 .sidebar__list {
@@ -47,7 +57,7 @@
     color: #000;
     transition: all 0.3s ease;
 
-    width: 320px;
+    // width: 320px;
     height: 24px;
 
     font-size: 16px;
